@@ -1,4 +1,0 @@
-string_io.c:30:10: fatal error: 'os/internal.h' file not found
-   30 | #include "os/internal.h"
-      |          ^~~~~~~~~~~~~~~
-1 error generated.
