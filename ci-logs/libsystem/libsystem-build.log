@@ -1,0 +1,2721 @@
+libsystem: fsctl.h FSOPT_UTIMES_NULL: appended to sdk
+libsystem: clone libplatform libplatform-375.120.2
+warning: refs/tags/libplatform-375.120.2 7a4a363507b0cc888bbe5112e6ccd8826fd00c3c is not a commit!
+libsystem: clone libpthread libpthread-539.100.4
+warning: refs/tags/libpthread-539.100.4 68ea242a599b7fc735cfb3e38467c9ed96097d0f is not a commit!
+libsystem: libplatform headers: ok
+       GENERATE kasan-denylist-x86_64
+             CC externs.o
+       GENERATE bsd/sys/_posix_availability.h
+       GENERATE kasan-denylist-arm64
+       GENERATE bsd/sys/_symbol_aliasing.h
+       GENERATE kcov-denylist-x86_64
+       GENERATE kcov-denylist-arm64
+             CC kextsymboltool.o
+          BISON parser.c
+             CC openp.o
+             CC searchp.o
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:465:14: warning: 'NXArchInfo' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  465 | static const NXArchInfo *
+      |              ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/arch.h:58:27: note: 'NXArchInfo' has been explicitly marked deprecated here
+   58 | typedef struct NXArchInfo NXArchInfo __CCTOOLS_DEPRECATED;
+      |                           ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:472:15: warning: 'NXArchInfo' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  472 |         static const NXArchInfo archlist[] = {
+      |                      ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/arch.h:58:27: note: 'NXArchInfo' has been explicitly marked deprecated here
+   58 | typedef struct NXArchInfo NXArchInfo __CCTOOLS_DEPRECATED;
+      |                           ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:508:8: warning: 'NXArchInfo' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  508 |         const NXArchInfo *  host_arch;
+      |               ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/arch.h:58:27: note: 'NXArchInfo' has been explicitly marked deprecated here
+   58 | typedef struct NXArchInfo NXArchInfo __CCTOOLS_DEPRECATED;
+      |                           ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:509:8: warning: 'NXArchInfo' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  509 |         const NXArchInfo *  target_arch;
+      |               ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/arch.h:58:27: note: 'NXArchInfo' has been explicitly marked deprecated here
+   58 | typedef struct NXArchInfo NXArchInfo __CCTOOLS_DEPRECATED;
+      |                           ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:523:14: warning: 'NXGetLocalArchInfo' is deprecated: first deprecated in macOS 13.0 [-Wdeprecated-declarations]
+  523 |         host_arch = NXGetLocalArchInfo();
+      |                     ^~~~~~~~~~~~~~~~~~
+      |                     use macho_arch_name_for_mach_header()
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/arch.h:72:26: note: 'NXGetLocalArchInfo' has been explicitly marked deprecated here
+   72 | extern const NXArchInfo *NXGetLocalArchInfo(void) __CCTOOLS_DEPRECATED_MSG("use macho_arch_name_for_mach_header()");
+      |                          ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:763:4: warning: 'swap_mach_header_64' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  763 |                         swap_mach_header_64(&hdr, target_arch->byteorder);
+      |                         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/swap.h:63:13: note: 'swap_mach_header_64' has been explicitly marked deprecated here
+   63 | extern void swap_mach_header_64(
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:764:4: warning: 'swap_segment_command_64' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  764 |                         swap_segment_command_64(&segcmd, target_arch->byteorder);
+      |                         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/swap.h:75:13: note: 'swap_segment_command_64' has been explicitly marked deprecated here
+   75 | extern void swap_segment_command_64(
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:801:4: warning: 'swap_mach_header' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  801 |                         swap_mach_header(&hdr, target_arch->byteorder);
+      |                         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/swap.h:59:13: note: 'swap_mach_header' has been explicitly marked deprecated here
+   59 | extern void swap_mach_header(
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:802:4: warning: 'swap_segment_command' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  802 |                         swap_segment_command(&segcmd, target_arch->byteorder);
+      |                         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/swap.h:71:13: note: 'swap_segment_command' has been explicitly marked deprecated here
+   71 | extern void swap_segment_command(
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:816:3: warning: 'swap_symtab_command' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  816 |                 swap_symtab_command(&symcmd, target_arch->byteorder);
+      |                 ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/swap.h:89:13: note: 'swap_symtab_command' has been explicitly marked deprecated here
+   89 | extern void swap_symtab_command(
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:817:3: warning: 'swap_uuid_command' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  817 |                 swap_uuid_command(&uuidcmd, target_arch->byteorder);
+      |                 ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/swap.h:217:13: note: 'swap_uuid_command' has been explicitly marked deprecated here
+  217 | extern void swap_uuid_command(
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:877:6: warning: 'swap_nlist_64' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  877 |                                         swap_nlist_64(&nl, 1, target_arch->byteorder);
+      |                                         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/swap.h:235:13: note: 'swap_nlist_64' has been explicitly marked deprecated here
+  235 | extern void swap_nlist_64(
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/SETUP/kextsymboltool/kextsymboltool.c:903:6: warning: 'swap_nlist' is deprecated: first deprecated in macOS 13.0 - No longer supported [-Wdeprecated-declarations]
+  903 |                                         swap_nlist(&nl, 1, target_arch->byteorder);
+      |                                         ^
+/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/include/mach-o/swap.h:230:13: note: 'swap_nlist' has been explicitly marked deprecated here
+  230 | extern void swap_nlist(
+      |             ^
+13 warnings generated.
+             LD kextsymboltool
+           FLEX lexer.yy.c
+             CC parser.o
+             CC main.o
+             CC mkheaders.o
+             CC mkioconf.o
+             CC mkmakefile.o
+       CODESIGN kextsymboltool
+             CC lexer.yy.o
+/Users/runner/work/ioni-os/ioni-os/SETUP/config/mkmakefile.c:720:6: warning: variable 'lpos' set but not used [-Wunused-but-set-variable]
+  720 |         int lpos, len = 0; /* dvw: init to 0 */
+      |             ^
+1 warning generated.
+             LD config
+             CC setsegname.o
+       CODESIGN config
+             LD setsegname
+       CODESIGN setsegname
+             CC decomment.o
+             CC installfile.o
+             LD decomment
+       CODESIGN decomment
+             LD installfile
+       CODESIGN installfile
+             CC replacecontents.o
+             LD replacecontents
+       CODESIGN replacecontents
+       GENERATE xnuVersion with version "25.6.0"
+        INSTALL darwin.d
+        INSTALL errno.d
+        INSTALL io.d
+        INSTALL ip.d
+        INSTALL sched.d
+        INSTALL signal.d
+        INSTALL socket.d
+        INSTALL tcp.d
+        INSTALL unistd.d
+        INSTALL log_unnest_badness.d
+        INSTALL suspicious_task_vm_info_count.d
+        INSTALL vm_map_delete_permanent.d
+        INSTALL vm_map_delete_permanent_deny.d
+        INSTALL vm_map_delete_permanent_prot_none.d
+        INSTALL vm_object_ownership.d
+            MAN _exit.2
+            MAN EV_SET.2
+            MAN FD_CLR.2
+            MAN FD_COPY.2
+            MAN FD_ISSET.2
+            MAN FD_SET.2
+            MAN FD_ZERO.2
+            MAN aio_cancel.2
+            MAN aio_error.2
+            MAN aio_read.2
+            MAN aio_return.2
+            MAN aio_suspend.2
+            MAN aio_write.2
+            MAN accept.2
+            MAN access.2
+            MAN acct.2
+            MAN adjtime.2
+            MAN audit.2
+            MAN auditctl.2
+            MAN auditon.2
+            MAN bind.2
+            MAN chdir.2
+            MAN chflags.2
+            MAN chmod.2
+            MAN chown.2
+            MAN chroot.2
+            MAN clonefile.2
+            MAN clonefileat.2
+            MAN close.2
+            MAN connect.2
+            MAN connectx.2
+            MAN disconnectx.2
+            MAN dup.2
+            MAN dup2.2
+            MAN errno.2
+            MAN execve.2
+            MAN exchangedata.2
+            MAN faccessat.2
+            MAN fchdir.2
+            MAN fchflags.2
+            MAN fchmod.2
+            MAN fchmodat.2
+            MAN fchown.2
+            MAN fchownat.2
+            MAN fclonefileat.2
+            MAN fcntl.2
+            MAN fgetattrlist.2
+            MAN fsetattrlist.2
+            MAN fgetxattr.2
+            MAN fhopen.2
+            MAN fileport_makefd.2
+            MAN fileport_makeport.2
+            MAN flistxattr.2
+            MAN flock.2
+            MAN fork.2
+            MAN fpathconf.2
+            MAN freadlink.2
+            MAN fremovexattr.2
+            MAN fsetxattr.2
+            MAN fsgetpath.2
+            MAN fstat.2
+            MAN fstat64.2
+            MAN fstatat.2
+            MAN fstatfs.2
+            MAN fstatfs64.2
+            MAN fsync.2
+            MAN fs_snapshot_create.2
+            MAN fs_snapshot_list.2
+            MAN fs_snapshot_mount.2
+            MAN fs_snapshot_delete.2
+            MAN fs_snapshot_rename.2
+            MAN fs_snapshot_revert.2
+            MAN ftruncate.2
+            MAN futimens.2
+            MAN futimes.2
+            MAN getattrlist.2
+            MAN getattrlistat.2
+            MAN getattrlistbulk.2
+            MAN getaudit.2
+            MAN getaudit_addr.2
+            MAN getauid.2
+            MAN getdirentries.2
+            MAN getdirentriesattr.2
+            MAN getdtablesize.2
+            MAN getegid.2
+            MAN getentropy.2
+            MAN geteuid.2
+            MAN getfh.2
+            MAN getfsstat.2
+            MAN getgid.2
+            MAN getgroups.2
+            MAN getitimer.2
+            MAN getlogin.2
+            MAN getpeername.2
+            MAN getpgrp.2
+            MAN getpgid.2
+            MAN getpid.2
+            MAN getppid.2
+            MAN getpriority.2
+            MAN getrlimit.2
+            MAN getrusage.2
+            MAN getsid.2
+            MAN getsockname.2
+            MAN getsockopt.2
+            MAN gettimeofday.2
+            MAN getuid.2
+            MAN getxattr.2
+            MAN i386_get_ldt.2
+            MAN i386_set_ldt.2
+            MAN intro.2
+            MAN ioctl.2
+            MAN issetugid.2
+            MAN kill.2
+            MAN kevent.2
+            MAN kevent64.2
+            MAN kevent_qos.2
+            MAN kqueue.2
+            MAN lchown.2
+            MAN link.2
+        INSTALL regs_x86_64.d
+            MAN linkat.2
+        INSTALL vmx_compat.d
+            MAN lio_listio.2
+            MAN listen.2
+            MAN listxattr.2
+            MAN lseek.2
+            MAN lstat.2
+            MAN lstat64.2
+            MAN madvise.2
+            MAN mincore.2
+            MAN minherit.2
+            MAN mkdir.2
+            MAN mkdirat.2
+            MAN mkfifo.2
+            MAN mkfifoat.2
+            MAN mknod.2
+            MAN mknodat.2
+            MAN mlock.2
+            MAN mmap.2
+            MAN mount.2
+            MAN mprotect.2
+            MAN msync.2
+            MAN munlock.2
+            MAN munmap.2
+            MAN nfsclnt.2
+            MAN nfssvc.2
+            MAN open.2
+            MAN openat.2
+            MAN openat_authenticated_np.2
+            MAN pathconf.2
+            MAN pipe.2
+            MAN poll.2
+            MAN posix_madvise.2
+            MAN pread.2
+            MAN preadv.2
+            MAN pselect.2
+            MAN pthread_setugid_np.2
+            MAN ptrace.2
+            MAN pwrite.2
+            MAN pwritev.2
+            MAN quotactl.2
+            MAN read.2
+            MAN readlink.2
+            MAN readlinkat.2
+            MAN readv.2
+            MAN reboot.2
+            MAN recv.2
+     INSTALLHDR endian.h
+            MAN recvfrom.2
+            MAN recvmsg.2
+            MAN rename.2
+     INSTALLHDR fasttrap_isa.h
+            MAN renameat.2
+            MAN renamex_np.2
+     INSTALLHDR param.h
+            MAN renameatx_np.2
+            MAN removexattr.2
+     INSTALLHDR profile.h
+            MAN revoke.2
+            MAN rmdir.2
+     INSTALLHDR signal.h
+            MAN searchfs.2
+            MAN select.2
+     INSTALLHDR limits.h
+            MAN sem_close.2
+            MAN sem_open.2
+            MAN sem_post.2
+     INSTALLHDR _limits.h
+            MAN sem_unlink.2
+            MAN sem_wait.2
+     INSTALLHDR types.h
+            MAN semctl.2
+            MAN semget.2
+     INSTALLHDR vmparam.h
+            MAN semop.2
+            MAN send.2
+            MAN sendfile.2
+     INSTALLHDR _types.h
+            MAN sendmsg.2
+            MAN sendto.2
+            MAN setattrlist.2
+     INSTALLHDR _param.h
+            MAN setattrlistat.2
+            MAN setaudit.2
+     INSTALLHDR _mcontext.h
+            MAN setaudit_addr.2
+            MAN setauid.2
+     INSTALLHDR _endian.h
+            MAN setegid.2
+            MAN seteuid.2
+     INSTALLHDR endian.h
+            MAN setgid.2
+            MAN setgroups.2
+            MAN setitimer.2
+     INSTALLHDR param.h
+            MAN setlogin.2
+            MAN setpgid.2
+     INSTALLHDR profile.h
+            MAN setpgrp.2
+            MAN setpriority.2
+     INSTALLHDR signal.h
+            MAN setregid.2
+            MAN setreuid.2
+            MAN setrlimit.2
+     INSTALLHDR limits.h
+            MAN setsid.2
+            MAN setsockopt.2
+            MAN settimeofday.2
+     INSTALLHDR _limits.h
+            MAN setuid.2
+            MAN setxattr.2
+     INSTALLHDR types.h
+            MAN shm_open.2
+     INSTALLHDR vmparam.h
+            MAN shm_unlink.2
+            MAN shmat.2
+            MAN shmctl.2
+     INSTALLHDR _types.h
+            MAN shmdt.2
+            MAN shmget.2
+            MAN shutdown.2
+     INSTALLHDR _param.h
+            MAN sigaction.2
+            MAN sigaltstack.2
+     INSTALLHDR _mcontext.h
+            MAN sigpending.2
+            MAN sigprocmask.2
+            MAN sigstack.2
+     INSTALLHDR _endian.h
+            MAN sigsuspend.2
+            MAN socket.2
+     INSTALLHDR _endian.h
+            MAN socketpair.2
+            MAN stat.2
+       GENERATE bsd.syscalls.master from /Users/runner/work/ioni-os/ioni-os/bsd/kern/syscalls.master
+     INSTALLHDR _limits.h
+            MAN stat64.2
+       GENERATE bsd/sys/sysproto.h from bsd.syscalls.master
+            MAN statfs.2
+     INSTALLHDR _mcontext.h
+            MAN statfs64.2
+            MAN symlink.2
+            MAN symlinkat.2
+     INSTALLHDR _param.h
+            MAN sync.2
+            MAN truncate.2
+     INSTALLHDR _types.h
+            MAN umask.2
+            MAN undelete.2
+     INSTALLHDR disklabel.h
+            MAN unlink.2
+            MAN unlinkat.2
+     INSTALLHDR endian.h
+            MAN unmount.2
+            MAN utimensat.2
+     INSTALLHDR fasttrap_isa.h
+            MAN utimes.2
+            MAN vfork.2
+     INSTALLHDR limits.h
+            MAN wait.2
+     INSTALLHDR param.h
+            MAN wait3.2
+            MAN wait4.2
+     INSTALLHDR profile.h
+            MAN waitpid.2
+            MAN write.2
+            MAN writev.2
+     INSTALLHDR signal.h
+            MAN posix_spawn.2
+        MANLINK sem_trywait.2
+     INSTALLHDR types.h
+        MANLINK posix_spawnp.2
+     INSTALLHDR vmparam.h
+            MAN queue.3
+     INSTALLHDR endian.h
+            MAN posix_spawn_file_actions_addclose.3
+            MAN posix_spawn_file_actions_init.3
+     INSTALLHDR param.h
+            MAN posix_spawnattr_init.3
+            MAN posix_spawnattr_setarchpref_np.3
+     INSTALLHDR profile.h
+            MAN posix_spawnattr_setbinpref_np.3
+     INSTALLHDR signal.h
+            MAN posix_spawnattr_setflags.3
+            MAN posix_spawnattr_setpgroup.3
+     INSTALLHDR limits.h
+            MAN posix_spawnattr_setsigdefault.3
+     INSTALLHDR _limits.h
+            MAN posix_spawnattr_setsigmask.3
+            MAN posix_spawnattr_setspecialport_np.3
+            MAN getiopolicy_np.3
+     INSTALLHDR types.h
+        MANLINK CIRCLEQ_ENTRY.3
+        MANLINK CIRCLEQ_HEAD.3
+        MANLINK CIRCLEQ_INIT.3
+        MANLINK CIRCLEQ_INSERT_AFTER.3
+        MANLINK CIRCLEQ_INSERT_BEFORE.3
+     INSTALLHDR vmparam.h
+        MANLINK CIRCLEQ_INSERT_HEAD.3
+        MANLINK CIRCLEQ_INSERT_TAIL.3
+        MANLINK CIRCLEQ_REMOVE.3
+        MANLINK LIST_ENTRY.3
+        MANLINK LIST_HEAD.3
+     INSTALLHDR _types.h
+        MANLINK LIST_INIT.3
+        MANLINK LIST_INSERT_AFTER.3
+        MANLINK LIST_INSERT_BEFORE.3
+        MANLINK LIST_INSERT_HEAD.3
+        MANLINK LIST_REMOVE.3
+        MANLINK TAILQ_ENTRY.3
+     INSTALLHDR _param.h
+        MANLINK TAILQ_HEAD.3
+        MANLINK TAILQ_INIT.3
+        MANLINK TAILQ_INSERT_AFTER.3
+        MANLINK TAILQ_INSERT_BEFORE.3
+     INSTALLHDR _mcontext.h
+        MANLINK TAILQ_INSERT_HEAD.3
+        MANLINK TAILQ_INSERT_TAIL.3
+        MANLINK TAILQ_REMOVE.3
+        MANLINK posix_spawn_file_actions_addopen.3
+     INSTALLHDR _endian.h
+        MANLINK posix_spawn_file_actions_adddup2.3
+        MANLINK posix_spawn_file_actions_addinherit_np.3
+        MANLINK posix_spawn_file_actions_addchdir.3
+        MANLINK posix_spawn_file_actions_addfchdir.3
+        MANLINK posix_spawn_file_actions_destroy.3
+        MANLINK posix_spawnattr_destroy.3
+        MANLINK posix_spawnattr_getarchpref_np.3
+        MANLINK posix_spawnattr_getbinpref_np.3
+        MANLINK posix_spawnattr_getflags.3
+        MANLINK posix_spawnattr_getpgroup.3
+     INSTALLHDR aesxts.h
+        MANLINK posix_spawnattr_getsigdefault.3
+        MANLINK posix_spawnattr_getsigmask.3
+        MANLINK posix_spawnattr_setexceptionports_np.3
+        MANLINK setiopolicy_np.3
+            MAN aio.4
+            MAN arp.4
+            MAN audit.4
+            MAN auditpipe.4
+            MAN bpf.4
+            MAN dummynet.4
+            MAN fd.4
+            MAN gif.4
+            MAN icmp.4
+            MAN icmp6.4
+            MAN ifmib.4
+            MAN inet.4
+            MAN inet6.4
+     INSTALLHDR boolean.h
+            MAN ip.4
+            MAN ip6.4
+     INSTALLHDR exception.h
+            MAN ipl.4
+            MAN ipsec.4
+            MAN lo.4
+     INSTALLHDR fp_reg.h
+            MAN netintro.4
+            MAN networking.4
+     INSTALLHDR processor_info.h
+            MAN null.4
+            MAN pty.4
+     INSTALLHDR kern_return.h
+            MAN random.4
+            MAN route.4
+     INSTALLHDR ndr_def.h
+            MAN stderr.4
+            MAN stdin.4
+     INSTALLHDR syscall_sw.h
+            MAN stdout.4
+     INSTALLHDR thread_status.h
+            MAN stf.4
+            MAN tcp.4
+            MAN termios.4
+     INSTALLHDR thread_state.h
+            MAN tty.4
+            MAN udp.4
+     INSTALLHDR vm_param.h
+            MAN unix.4
+       GENERATE bsd/sys/syscall.h from bsd.syscalls.master
+     INSTALLHDR vm_types.h
+            MAN urandom.4
+     INSTALLHDR rpc.h
+            MAN vsock.4
+     INSTALLHDR _structs.h
+            MAN acct.5
+     INSTALLHDR sdt_isa.h
+            MAN core.5
+            MAN dir.5
+     INSTALLHDR asm.h
+            MAN dirent.5
+     INSTALLHDR boolean.h
+            MAN types.5
+     INSTALLHDR exception.h
+     INSTALLHDR fp_reg.h
+            MAN sticky.7
+     INSTALLHDR processor_info.h
+            MAN backtrace.9
+     INSTALLHDR kern_return.h
+            MAN backtrace_packed.9
+     INSTALLHDR ndr_def.h
+            MAN backtrace_pack.9
+     INSTALLHDR syscall_sw.h
+            MAN backtrace_unpack.9
+     INSTALLHDR thread_status.h
+            MAN backtrace_user.9
+            MAN byteorder.9
+     INSTALLHDR thread_state.h
+            MAN copy.9
+     INSTALLHDR vm_param.h
+            MAN copyin.9
+     INSTALLHDR vm_types.h
+            MAN copyinstr.9
+     INSTALLHDR rpc.h
+            MAN copyout.9
+     INSTALLHDR _structs.h
+            MAN copystr.9
+     INSTALLHDR sdt_isa.h
+            MAN fetch.9
+     INSTALLHDR asm.h
+            MAN fubyte.9
+            MAN fuibyte.9
+     INSTALLHDR _structs.h
+            MAN fuiword.9
+     INSTALLHDR boolean.h
+            MAN fulong.9
+            MAN fuulong.9
+     INSTALLHDR exception.h
+            MAN fuword.9
+            MAN store.9
+     INSTALLHDR fp_reg.h
+            MAN style.9
+            MAN subyte.9
+     INSTALLHDR kern_return.h
+            MAN suibyte.9
+            MAN suiword.9
+            MAN sulong.9
+     INSTALLHDR ndr_def.h
+            MAN suulong.9
+            MAN suword.9
+     INSTALLHDR processor_info.h
+            MAN intro.9
+     INSTALLHDR rpc.h
+     INSTALLHDR sdt_isa.h
+       GENERATE /Users/runner/work/ioni-os/ioni-os/BUILD/obj/syscall.codes from bsd.syscalls.master
+     INSTALLHDR syscall_sw.h
+     INSTALLHDR thread_state.h
+     INSTALLHDR thread_status.h
+     INSTALLHDR vm_param.h
+     INSTALLHDR vm_types.h
+        INSTALL xnu_exclaves.plist
+     INSTALLHDR asm.h
+        INSTALL xnu_epoch_sync.plist
+     INSTALLHDR boolean.h
+        INSTALL xnu_suspension.plist
+     INSTALLHDR exception.h
+        INSTALL trace.codes
+     INSTALLHDR fp_reg.h
+     INSTALLHDR processor_info.h
+     INSTALLHDR kern_return.h
+     INSTALLHDR ndr_def.h
+     INSTALLHDR syscall_sw.h
+     INSTALLHDR thread_status.h
+     INSTALLHDR boot.h
+     INSTALLHDR thread_state.h
+     INSTALLHDR efi.h
+     INSTALLHDR vm_param.h
+     INSTALLHDR protos.h
+     INSTALLHDR vm_types.h
+     INSTALLHDR boot.h
+     INSTALLHDR rpc.h
+     INSTALLHDR _structs.h
+     INSTALLHDR efi.h
+     INSTALLHDR sdt_isa.h
+     INSTALLHDR protos.h
+     INSTALLHDR asm.h
+     INSTALLHDR boot.h
+     INSTALLHDR efi.h
+     INSTALLHDR protos.h
+     INSTALLHDR boot.h
+     INSTALLHDR eflags.h
+     INSTALLHDR efi.h
+     INSTALLHDR user_ldt.h
+     INSTALLHDR protos.h
+     INSTALLHDR asm.h
+     INSTALLHDR cpuid.h
+     INSTALLHDR device_tree.h
+            IIG IOBufferMemoryDescriptor.h
+     INSTALLHDR eflags.h
+     INSTALLHDR locks.h
+     INSTALLHDR machine_routines.h
+     INSTALLHDR proc_reg.h
+     INSTALLHDR vmx.h
+     INSTALLHDR trap.h
+     INSTALLHDR cpu_capabilities.h
+     INSTALLHDR cpu_capabilities.h
+            MIG clock.h
+     INSTALLHDR eflags.h
+     INSTALLHDR user_ldt.h
+     INSTALLHDR apic.h
+     INSTALLHDR asm.h
+     INSTALLHDR atomic.h
+     INSTALLHDR cpu_number.h
+            MIG clock_priv.h
+     INSTALLHDR cpu_capabilities.h
+     INSTALLHDR cpu_topology.h
+     INSTALLHDR cpuid.h
+            MIG host_priv.h
+     INSTALLHDR eflags.h
+     INSTALLHDR fpu.h
+     INSTALLHDR x86_hypercall.h
+            MIG host_security.h
+     INSTALLHDR lapic.h
+     INSTALLHDR lock.h
+            MIG ktrace_background.h
+     INSTALLHDR locks.h
+            IIG IODataQueueDispatchSource.h
+     INSTALLHDR machine_routines.h
+            MIG mach_host.h
+     INSTALLHDR machine_cpu.h
+            IIG IODispatchQueue.h
+     INSTALLHDR memory_types.h
+            IIG IODispatchSource.h
+            IIG IODMACommand.h
+            MIG mach_port.h
+     INSTALLHDR mtrr.h
+            IIG IOEventLink.h
+     INSTALLHDR mp.h
+            IIG IOExtensiblePaniclog.h
+            MIG mach_vm.h
+     INSTALLHDR mp_desc.h
+            IIG IOInterruptDispatchSource.h
+            IIG IOMemoryDescriptor.h
+     INSTALLHDR mp_events.h
+            IIG IOMemoryMap.h
+     INSTALLHDR pal_native.h
+            MIG mach_voucher.h
+            IIG IOService.h
+     INSTALLHDR pal_routines.h
+            IIG IOServiceNotificationDispatchSource.h
+     INSTALLHDR pal_hibernate.h
+            IIG IOServiceStateNotificationDispatchSource.h
+     INSTALLHDR panic_hooks.h
+            MIG mach_voucher_attr_control.h
+            IIG IOUserClient.h
+     INSTALLHDR pmCPU.h
+            IIG IOUserServer.h
+     INSTALLHDR pmap.h
+            IIG IOWorkGroup.h
+            MIG memory_entry.h
+            IIG OSAction.h
+     INSTALLHDR proc_reg.h
+            IIG OSObject.h
+     INSTALLHDR rtclock_protos.h
+            MIG processor.h
+     INSTALLHDR seg.h
+     INSTALLHDR simple_lock.h
+            MIG processor_set.h
+     INSTALLHDR smp.h
+     INSTALLHDR trap.h
+            MIG task.h
+     INSTALLHDR tsc.h
+     INSTALLHDR tss.h
+            MIG task_access.h
+     INSTALLHDR ucode.h
+     INSTALLHDR vmx.h
+            MIG thread_act.h
+     INSTALLHDR cpc_x86_64.h
+            MIG upl.h
+     INSTALLHDR static_if.h
+     INSTALLHDR machine_remote_time.h
+     INSTALLHDR machine_remote_time.h
+            MIG vm_map.h
+            MIG vfs_nspace.h
+     INSTALLHDR OSByteOrder.h
+            MIG audit_triggers_server.h
+     INSTALLHDR _OSByteOrder.h
+     INSTALLHDR OSByteOrder.h
+            MIG clock_reply_server.h
+     INSTALLHDR _OSByteOrder.h
+     INSTALLHDR OSByteOrder.h
+     INSTALLHDR _OSByteOrder.h
+            MIG coalition_notification_server.h
+     INSTALLHDR OSByteOrder.h
+     INSTALLHDR _OSByteOrder.h
+            MIG doubleagent_mig_server.h
+            MIG exc_server.h
+     INSTALLHDR asm_help.h
+            MIG fairplayd_notification_server.h
+     INSTALLHDR cpu.h
+     INSTALLHDR io.h
+     INSTALLHDR pio.h
+            MIG arcade_upcall_server.h
+     INSTALLHDR sel.h
+     INSTALLHDR tss.h
+            MIG memory_error_notification_server.h
+     INSTALLHDR desc.h
+     INSTALLHDR reg_help.h
+            MIG mach_exc_server.h
+     INSTALLHDR table.h
+     INSTALLHDR asm_help.h
+            MIG notify_server.h
+     INSTALLHDR cpu.h
+     INSTALLHDR io.h
+     INSTALLHDR pio.h
+            MIG task_access_server.h
+     INSTALLHDR sel.h
+     INSTALLHDR tss.h
+            MIG telemetry_notification_server.h
+     INSTALLHDR desc.h
+     INSTALLHDR reg_help.h
+     INSTALLHDR table.h
+            MIG sysdiagnose_notification_server.h
+            MIG iocompressionstats_notification_server.h
+            MIG vfs_nspace_server.h
+       GENERATE libkern/version.h from /Users/runner/work/ioni-os/ioni-os/libkern/libkern/version.h.template
+            MIG gssd_mach.h
+            MIG kextd_mach.h
+            MIG lockd_mach.h
+     INSTALLHDR mac.h
+     INSTALLHDR mac.h
+     INSTALLHDR _label.h
+     INSTALLHDR mac.h
+     INSTALLHDR mac_data.h
+     INSTALLHDR mac_framework.h
+     INSTALLHDR mac_internal.h
+     INSTALLHDR mac_mach_internal.h
+     INSTALLHDR mac_policy.h
+     INSTALLHDR audit.h
+     INSTALLHDR audit_domain.h
+     INSTALLHDR audit_errno.h
+     INSTALLHDR audit_fcntl.h
+     INSTALLHDR audit_internal.h
+     INSTALLHDR audit_kevents.h
+     INSTALLHDR audit_record.h
+     INSTALLHDR audit_socket_type.h
+     INSTALLHDR audit.h
+     INSTALLHDR audit.h
+     INSTALLHDR audit_domain.h
+     INSTALLHDR audit_errno.h
+     INSTALLHDR audit_fcntl.h
+     LDFILELIST libsecurity
+     INSTALLHDR audit_internal.h
+     INSTALLHDR audit_kevents.h
+     INSTALLHDR audit_record.h
+     INSTALLHDR audit_socket_type.h
+             CC qsort.o
+     INSTALLHDR audit.h
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/local/include/kernel' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/local/include/iBoot' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk//System/Library/Frameworks/Kernel.framework/Versions/A/PrivateHeaders/AppleFeatures' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk//System/Library/Frameworks/Kernel.framework/Versions/A/PrivateHeaders/platform' [-Wmissing-include-dirs]
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/kern/qsort.c:66:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/sys/types.h:78:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/machine/types.h:35:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/i386/types.h:73:
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:62:33: warning: identifier '__int8_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   62 | typedef __signed char           __int8_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:66:33: warning: identifier '__uint8_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   66 | typedef unsigned char           __uint8_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:67:33: warning: identifier '__int16_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   67 | typedef short                   __int16_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:68:33: warning: identifier '__uint16_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   68 | typedef unsigned short          __uint16_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:69:33: warning: identifier '__int32_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   69 | typedef int                     __int32_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:70:33: warning: identifier '__uint32_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   70 | typedef unsigned int            __uint32_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:71:33: warning: identifier '__int64_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   71 | typedef long long               __int64_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:72:33: warning: identifier '__uint64_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   72 | typedef unsigned long long      __uint64_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:74:33: warning: identifier '__darwin_intptr_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   74 | typedef long                    __darwin_intptr_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:75:33: warning: identifier '__darwin_natural_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   75 | typedef unsigned int            __darwin_natural_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:95:33: warning: identifier '__darwin_ct_rune_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   95 | typedef int                     __darwin_ct_rune_t;     /* ct_rune_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:102:18: warning: identifier '__mbstate8' is reserved because it starts with '__' [-Wreserved-identifier]
+  102 |         char            __mbstate8[128];
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:104:3: warning: identifier '__mbstate_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  104 | } __mbstate_t;
+      |   ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:106:33: warning: identifier '__darwin_mbstate_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  106 | typedef __mbstate_t             __darwin_mbstate_t;     /* mbstate_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:111:33: warning: identifier '__darwin_ptrdiff_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  111 | typedef __PTRDIFF_TYPE__        __darwin_ptrdiff_t;     /* ptr1 - ptr2 */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:121:33: warning: identifier '__darwin_size_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  121 | typedef __SIZE_TYPE__           __darwin_size_t;        /* sizeof() */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:129:33: warning: identifier '__darwin_va_list' is reserved because it starts with '__' [-Wreserved-identifier]
+  129 | typedef __builtin_va_list       __darwin_va_list;       /* va_list */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:137:33: warning: identifier '__darwin_wchar_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  137 | typedef __WCHAR_TYPE__          __darwin_wchar_t;       /* wchar_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:142:33: warning: identifier '__darwin_rune_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  142 | typedef __darwin_wchar_t        __darwin_rune_t;        /* rune_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:145:33: warning: identifier '__darwin_wint_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  145 | typedef __WINT_TYPE__           __darwin_wint_t;        /* wint_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:150:33: warning: identifier '__darwin_clock_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  150 | typedef unsigned long           __darwin_clock_t;       /* clock() */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:151:33: warning: identifier '__darwin_socklen_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  151 | typedef __uint32_t              __darwin_socklen_t;     /* socklen_t (duh) */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:152:33: warning: identifier '__darwin_ssize_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  152 | typedef long                    __darwin_ssize_t;       /* byte count or error */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/bsd/i386/_types.h:153:33: warning: identifier '__darwin_time_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  153 | typedef long                    __darwin_time_t;        /* time() */
+      |                                 ^
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/kern/qsort.c:66:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/sys/types.h:79:
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:78:25: warning: identifier '__darwin_blkcnt_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   78 | typedef __int64_t       __darwin_blkcnt_t;      /* total blocks */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:79:25: warning: identifier '__darwin_blksize_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   79 | typedef __int32_t       __darwin_blksize_t;     /* preferred block size */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:80:25: warning: identifier '__darwin_dev_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   80 | typedef __int32_t       __darwin_dev_t;         /* dev_t */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:81:25: warning: identifier '__darwin_fsblkcnt_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   81 | typedef unsigned int    __darwin_fsblkcnt_t;    /* Used by statvfs and fstatvfs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:82:25: warning: identifier '__darwin_fsfilcnt_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   82 | typedef unsigned int    __darwin_fsfilcnt_t;    /* Used by statvfs and fstatvfs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:83:25: warning: identifier '__darwin_gid_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   83 | typedef __uint32_t      __darwin_gid_t;         /* [???] process and group IDs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:84:25: warning: identifier '__darwin_id_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   84 | typedef __uint32_t      __darwin_id_t;          /* [XSI] pid_t, uid_t, or gid_t*/
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:85:25: warning: identifier '__darwin_ino64_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   85 | typedef __uint64_t      __darwin_ino64_t;       /* [???] Used for 64 bit inodes */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:89:25: warning: identifier '__darwin_ino_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   89 | typedef __uint32_t      __darwin_ino_t;         /* [???] Used for inodes */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:91:28: warning: identifier '__darwin_mach_port_name_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   91 | typedef __darwin_natural_t __darwin_mach_port_name_t; /* Used by mach */
+      |                            ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:92:35: warning: identifier '__darwin_mach_port_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   92 | typedef __darwin_mach_port_name_t __darwin_mach_port_t; /* Used by mach */
+      |                                   ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:93:25: warning: identifier '__darwin_mode_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   93 | typedef __uint16_t      __darwin_mode_t;        /* [???] Some file attributes */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:94:25: warning: identifier '__darwin_off_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   94 | typedef __int64_t       __darwin_off_t;         /* [???] Used for file sizes */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:95:25: warning: identifier '__darwin_pid_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   95 | typedef __int32_t       __darwin_pid_t;         /* [???] process and group IDs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:96:25: warning: identifier '__darwin_sigset_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   96 | typedef __uint32_t      __darwin_sigset_t;      /* [???] signal set */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:97:25: warning: identifier '__darwin_suseconds_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   97 | typedef __int32_t       __darwin_suseconds_t;   /* [???] microseconds */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:98:25: warning: identifier '__darwin_uid_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   98 | typedef __uint32_t      __darwin_uid_t;         /* [???] user IDs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:99:25: warning: identifier '__darwin_useconds_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   99 | typedef __uint32_t      __darwin_useconds_t;    /* [???] microseconds */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:101:25: warning: identifier '__darwin_uuid_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  101 | typedef unsigned char   __darwin_uuid_t[16];
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types.h:102:17: warning: identifier '__darwin_uuid_string_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  102 | typedef char    __darwin_uuid_string_t[37];
+      |                 ^
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/kern/qsort.c:66:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/sys/types.h:81:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/machine/endian.h:35:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/i386/endian.h:85:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/sys/_endian.h:132:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/libkern/_OSByteOrder.h:58:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/libkern/i386/_OSByteOrder.h:50:1: warning: identifier '_OSSwapInt16' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+   50 | _OSSwapInt16(
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/libkern/i386/_OSByteOrder.h:59:1: warning: identifier '_OSSwapInt32' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+   59 | _OSSwapInt32(
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/libkern/i386/_OSByteOrder.h:74:1: warning: identifier '_OSSwapInt64' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+   74 | _OSSwapInt64(
+      | ^
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/kern/qsort.c:66:
+In file included from /Users/runner/work/ioni-os/ioni-os/bsd/sys/types.h:187:
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types/_fd_def.h:113:1: warning: identifier '__darwin_fd_isset' is reserved because it starts with '__' [-Wreserved-identifier]
+  113 | __darwin_fd_isset(int _fd, const struct fd_set *_p)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types/_fd_def.h:119:1: warning: identifier '__darwin_fd_set' is reserved because it starts with '__' [-Wreserved-identifier]
+  119 | __darwin_fd_set(int _fd, struct fd_set *const _p)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/bsd/sys/_types/_fd_def.h:125:1: warning: identifier '__darwin_fd_clr' is reserved because it starts with '__' [-Wreserved-identifier]
+  125 | __darwin_fd_clr(int _fd, struct fd_set *const _p)
+      | ^
+     INSTALLHDR sha1.h
+            IIG IOBufferMemoryDescriptor.h
+     INSTALLHDR sha2.h
+            IIG IODataQueueDispatchSource.h
+     INSTALLHDR des.h
+            IIG IODispatchQueue.h
+     INSTALLHDR aes.h
+            IIG IODispatchSource.h
+            IIG IODMACommand.h
+     INSTALLHDR aesxts.h
+            IIG IOEventLink.h
+            IIG IOExtensiblePaniclog.h
+            IIG IOInterruptDispatchSource.h
+            IIG IOMemoryDescriptor.h
+            IIG IOMemoryMap.h
+            IIG IOService.h
+     INSTALLHDR libkern.h
+            IIG IOServiceNotificationDispatchSource.h
+            IIG IOServiceStateNotificationDispatchSource.h
+     INSTALLHDR copyio.h
+            IIG IOUserClient.h
+            IIG IOUserServer.h
+     INSTALLHDR libkern.h
+50 warnings generated.
+            IIG IOWorkGroup.h
+     LDFILELIST libbsd
+     INSTALLHDR copyio.h
+            IIG OSAction.h
+            IIG OSObject.h
+     INSTALLHDR _endian.h
+     INSTALLHDR IONVRAMController.h
+     INSTALLHDR _limits.h
+     INSTALLHDR _mcontext.h
+     INSTALLHDR IONVRAMController.h
+            IIG TestDextRematch.h
+     INSTALLHDR _param.h
+     INSTALLHDR _types.h
+     INSTALLHDR AppleMacIO.h
+     INSTALLHDR byte_order.h
+     LDFILELIST libiokit
+     INSTALLHDR endian.h
+     INSTALLHDR AppleMacIODevice.h
+     INSTALLHDR fasttrap_isa.h
+     INSTALLHDR limits.h
+     INSTALLHDR AppleNMI.h
+     INSTALLHDR param.h
+     INSTALLHDR profile.h
+     INSTALLHDR ApplePlatformExpert.h
+     INSTALLHDR signal.h
+     INSTALLHDR IOPlatformIO.h
+     INSTALLHDR types.h
+     INSTALLHDR AppleMacIO.h
+     INSTALLHDR vmparam.h
+     INSTALLHDR AppleMacIODevice.h
+     INSTALLHDR disklabel.h
+     INSTALLHDR AppleNMI.h
+     INSTALLHDR byte_order.h
+     INSTALLHDR ApplePlatformExpert.h
+     INSTALLHDR endian.h
+     INSTALLHDR IOPlatformIO.h
+            MIG device_server.h
+     INSTALLHDR limits.h
+     INSTALLHDR param.h
+     INSTALLHDR IOPwrController.h
+     INSTALLHDR profile.h
+     INSTALLHDR IOPwrController.h
+     INSTALLHDR signal.h
+     INSTALLHDR types.h
+     INSTALLHDR vmparam.h
+            MIG device_server.c
+     INSTALLHDR _types.h
+     INSTALLHDR IOPMLibDefs.h
+     INSTALLHDR _limits.h
+     INSTALLHDR IOPM.h
+     INSTALLHDR _param.h
+     INSTALLHDR IOPM.h
+     INSTALLHDR _mcontext.h
+     INSTALLHDR IOPMLibDefs.h
+     INSTALLHDR _endian.h
+     INSTALLHDR IOPMPowerSource.h
+            MIG audit_triggers_user.c
+     INSTALLHDR _endian.h
+     INSTALLHDR IOPMPowerSourceList.h
+     INSTALLHDR _limits.h
+     INSTALLHDR _mcontext.h
+     INSTALLHDR IOPMpowerState.h
+     INSTALLHDR _param.h
+            MIG clock_reply_user.c
+     INSTALLHDR IOPowerConnection.h
+     INSTALLHDR _types.h
+     INSTALLHDR RootDomain.h
+     INSTALLHDR byte_order.h
+     INSTALLHDR IOPMLibDefs.h
+     INSTALLHDR disklabel.h
+     INSTALLHDR IOPM.h
+            MIG coalition_notification_user.c
+     INSTALLHDR endian.h
+     INSTALLHDR IOPMPrivate.h
+     INSTALLHDR fasttrap_isa.h
+     INSTALLHDR IOPM.h
+     INSTALLHDR limits.h
+     INSTALLHDR IOPMLibDefs.h
+     INSTALLHDR param.h
+            MIG doubleagent_mig_user.c
+     INSTALLHDR IOPMPowerSource.h
+     INSTALLHDR profile.h
+     INSTALLHDR IOPMPowerSourceList.h
+     INSTALLHDR signal.h
+     INSTALLHDR IOPMpowerState.h
+     INSTALLHDR types.h
+     INSTALLHDR IOPowerConnection.h
+            MIG exc_user.c
+     INSTALLHDR vmparam.h
+     INSTALLHDR RootDomain.h
+     INSTALLHDR disklabel.h
+     INSTALLHDR IOPMPrivate.h
+     INSTALLHDR byte_order.h
+            MIG fairplayd_notification_user.c
+     INSTALLHDR endian.h
+     INSTALLHDR limits.h
+     INSTALLHDR IORTCController.h
+     INSTALLHDR param.h
+     INSTALLHDR profile.h
+     INSTALLHDR IORTCController.h
+            MIG arcade_upcall_user.c
+     INSTALLHDR signal.h
+     INSTALLHDR types.h
+     INSTALLHDR vmparam.h
+     INSTALLHDR IOWatchDogTimer.h
+     INSTALLHDR _types.h
+            MIG host_notify_reply_user.c
+     INSTALLHDR IOWatchDogTimer.h
+     INSTALLHDR _limits.h
+     INSTALLHDR _param.h
+     INSTALLHDR IOSkywalkSupport.h
+     INSTALLHDR _mcontext.h
+            MIG ktrace_background_user.c
+     INSTALLHDR _endian.h
+     INSTALLHDR IOBSD.h
+     INSTALLHDR IOKitKeys.h
+            MIG memory_error_notification_user.c
+     INSTALLHDR IOKitServer.h
+     INSTALLHDR devfs.h
+     INSTALLHDR IOReturn.h
+     INSTALLHDR devfs.h
+     INSTALLHDR IOSharedLock.h
+     INSTALLHDR devfs.h
+            MIG mach_exc_user.c
+     INSTALLHDR IOTypes.h
+     INSTALLHDR devfs.h
+     INSTALLHDR IOMapTypes.h
+     INSTALLHDR devfs_proto.h
+     INSTALLHDR OSMessageNotification.h
+            MIG mach_notify_user.c
+     INSTALLHDR devfsdefs.h
+     INSTALLHDR IODataQueueShared.h
+     INSTALLHDR IOMessage.h
+     INSTALLHDR IORPC.h
+     INSTALLHDR fifo.h
+            MIG mach_test_upcall_user.c
+     INSTALLHDR IOUserServer.h
+     INSTALLHDR fifo.h
+     INSTALLHDR assert.h
+     INSTALLHDR IOBSD.h
+            MIG resource_notify_user.c
+     INSTALLHDR IOBufferMemoryDescriptor.h
+     INSTALLHDR IOCatalogue.h
+     INSTALLHDR specdev.h
+     INSTALLHDR IOCircularDataQueue.h
+            MIG task_access_user.c
+     INSTALLHDR specdev.h
+     INSTALLHDR IOCircularDataQueueImplementation.h
+     INSTALLHDR specdev.h
+     INSTALLHDR specdev.h
+     INSTALLHDR IOCommand.h
+            MIG telemetry_notification_user.c
+     INSTALLHDR IOCommandGate.h
+     INSTALLHDR IOCommandPool.h
+     INSTALLHDR union.h
+     INSTALLHDR IOConditionLock.h
+            MIG iocompressionstats_notification_user.c
+     INSTALLHDR union.h
+     INSTALLHDR union.h
+     INSTALLHDR IODataQueue.h
+     INSTALLHDR union.h
+     INSTALLHDR IODataQueueShared.h
+     INSTALLHDR IODeviceMemory.h
+            MIG upl_user.c
+     INSTALLHDR IODeviceTreeSupport.h
+     INSTALLHDR IODMACommand.h
+     INSTALLHDR IODMAController.h
+            MIG vfs_nspace_user.c
+     INSTALLHDR IODMAEventSource.h
+     INSTALLHDR altq.h
+     INSTALLHDR IOEventSource.h
+     INSTALLHDR altq_cbq.h
+     INSTALLHDR IOFilterInterruptEventSource.h
+     INSTALLHDR altq_fairq.h
+            MIG vm_map_user.c
+     INSTALLHDR IOGuardPageMemoryDescriptor.h
+     INSTALLHDR altq_hfsc.h
+     INSTALLHDR IOInterleavedMemoryDescriptor.h
+     INSTALLHDR IOInterruptController.h
+     INSTALLHDR altq_priq.h
+     INSTALLHDR IOInterruptEventSource.h
+     INSTALLHDR altq_qfq.h
+            MIG sysdiagnose_notification_user.c
+     INSTALLHDR IOInterrupts.h
+     INSTALLHDR altq.h
+     INSTALLHDR IOKernelReportStructs.h
+     INSTALLHDR altq_cbq.h
+     INSTALLHDR IOKitDebug.h
+            MIG arcade_register_server.c
+     INSTALLHDR altq_fairq.h
+     INSTALLHDR IOKitDiagnosticsUserClient.h
+     INSTALLHDR altq_hfsc.h
+     INSTALLHDR altq_priq.h
+     INSTALLHDR IOKitKeys.h
+     INSTALLHDR altq_qfq.h
+     INSTALLHDR IOKitServer.h
+            MIG clock_server.c
+     INSTALLHDR IOLib.h
+     INSTALLHDR IOLocks.h
+     INSTALLHDR classq.h
+     INSTALLHDR IOMapper.h
+     INSTALLHDR classq_blue.h
+     INSTALLHDR IOMapTypes.h
+     INSTALLHDR classq_fq_codel.h
+     INSTALLHDR IOMemoryCursor.h
+            MIG exc_server.c
+     INSTALLHDR classq_red.h
+     INSTALLHDR IOMemoryDescriptor.h
+     INSTALLHDR classq_rio.h
+     INSTALLHDR IOMessage.h
+     INSTALLHDR classq_sfb.h
+     INSTALLHDR IOMultiMemoryDescriptor.h
+            MIG host_priv_server.c
+     INSTALLHDR if_classq.h
+     INSTALLHDR IONotifier.h
+     INSTALLHDR classq.h
+     INSTALLHDR IONVRAM.h
+     INSTALLHDR classq_blue.h
+     INSTALLHDR IOPlatformExpert.h
+     INSTALLHDR classq_red.h
+            MIG mach_eventlink_server.c
+     INSTALLHDR IOProviderPropertyMerger.h
+     INSTALLHDR classq_rio.h
+     INSTALLHDR IORangeAllocator.h
+     INSTALLHDR classq_sfb.h
+     INSTALLHDR IORegistryEntry.h
+     INSTALLHDR if_classq.h
+     INSTALLHDR IOReportMacros.h
+     INSTALLHDR classq_fq_codel.h
+            MIG mach_exc_server.c
+     INSTALLHDR IOReportTypes.h
+     INSTALLHDR IOReturn.h
+     INSTALLHDR IORPC.h
+     INSTALLHDR pktsched.h
+            MIG mach_host_server.c
+     INSTALLHDR IOService.h
+     INSTALLHDR pktsched_cbq.h
+     INSTALLHDR pktsched_fairq.h
+     INSTALLHDR IOServicePM.h
+     INSTALLHDR pktsched_fq_codel.h
+     INSTALLHDR IOServiceStateNotificationEventSource.h
+            MIG mach_notify_server.c
+     INSTALLHDR pktsched_hfsc.h
+     INSTALLHDR IOSharedDataQueue.h
+     INSTALLHDR pktsched_ops.h
+     INSTALLHDR IOSharedLock.h
+     INSTALLHDR pktsched_priq.h
+     INSTALLHDR IOSubMemoryDescriptor.h
+            MIG mach_port_server.c
+     INSTALLHDR pktsched_rmclass.h
+     INSTALLHDR IOTimerEventSource.h
+     INSTALLHDR pktsched.h
+     INSTALLHDR pktsched_cbq.h
+     INSTALLHDR IOTimeStamp.h
+     INSTALLHDR pktsched_fairq.h
+            MIG mach_vm_server.c
+     INSTALLHDR pktsched_hfsc.h
+     INSTALLHDR IOTypes.h
+     INSTALLHDR pktsched_priq.h
+     INSTALLHDR IOUserClient.h
+     INSTALLHDR pktsched_rmclass.h
+     INSTALLHDR IOUserServer.h
+     INSTALLHDR pktsched_fq_codel.h
+            MIG mach_voucher_server.c
+     INSTALLHDR IOWorkLoop.h
+     INSTALLHDR pktsched_ops.h
+     INSTALLHDR OSMessageNotification.h
+     INSTALLHDR PassthruInterruptController.h
+     INSTALLHDR aop_stats.h
+            MIG memory_entry_server.c
+     INSTALLHDR system.h
+     INSTALLHDR kpi_aop.h
+     INSTALLHDR IOBSD.h
+     INSTALLHDR aop_stats.h
+     INSTALLHDR IOKitKeys.h
+     INSTALLHDR aop_flow_stats.h
+            MIG processor_server.c
+     INSTALLHDR IOKitServer.h
+     INSTALLHDR IOReturn.h
+     INSTALLHDR IOSharedLock.h
+     INSTALLHDR IOTypes.h
+            MIG processor_set_server.c
+     INSTALLHDR bpf.h
+     INSTALLHDR IOMapTypes.h
+     INSTALLHDR dlil.h
+     INSTALLHDR OSMessageNotification.h
+            MIG restartable_server.c
+     INSTALLHDR ethernet.h
+     INSTALLHDR IODataQueueShared.h
+     INSTALLHDR if.h
+     INSTALLHDR IOMessage.h
+     INSTALLHDR if_arp.h
+     INSTALLHDR IORPC.h
+     INSTALLHDR if_dl.h
+     INSTALLHDR IOUserServer.h
+            MIG task_server.c
+     INSTALLHDR IOKitKeysPrivate.h
+     INSTALLHDR if_llc.h
+     INSTALLHDR IOHibernatePrivate.h
+     INSTALLHDR if_media.h
+     INSTALLHDR IOLocksPrivate.h
+     INSTALLHDR if_mib.h
+            MIG thread_act_server.c
+     INSTALLHDR if_types.h
+     INSTALLHDR IOStatistics.h
+     INSTALLHDR AppleKeyStoreInterface.h
+     INSTALLHDR if_utun.h
+     INSTALLHDR IOReportTypes.h
+     INSTALLHDR if_var.h
+     INSTALLHDR IOKernelReportStructs.h
+     INSTALLHDR if_var_status.h
+     INSTALLHDR IOReportMacros.h
+            MIG upl_server.c
+     INSTALLHDR IOInterruptAccounting.h
+     INSTALLHDR kext_net.h
+     INSTALLHDR IOCircularDataQueue.h
+     INSTALLHDR ndrv.h
+            MIG vm_map_server.c
+     INSTALLHDR IOCircularDataQueueImplementation.h
+     INSTALLHDR net_kev.h
+     INSTALLHDR pfkeyv2.h
+     INSTALLHDR AppleKeyStoreInterface.h
+     INSTALLHDR route.h
+     INSTALLHDR assert.h
+            MIG vm32_map_server.c
+     INSTALLHDR net.modulemap
+     INSTALLHDR IOBSD.h
+     INSTALLHDR bpf.h
+     INSTALLHDR IOBufferMemoryDescriptor.h
+     INSTALLHDR dlil.h
+     INSTALLHDR IOCatalogue.h
+     INSTALLHDR ethernet.h
+     INSTALLHDR IOCircularDataQueue.h
+     INSTALLHDR if.h
+            MIG checked
+/Applications/Xcode_26.6.app/Contents/Developer/usr/bin/python3 /Users/runner/work/ioni-os/ioni-os/tools/vm_sanitize_enforcement.py arcade_register_server.c clock_server.c exc_server.c host_priv_server.c mach_eventlink_server.c mach_exc_server.c mach_host_server.c mach_notify_server.c mach_port_server.c mach_vm_server.c mach_voucher_server.c memory_entry_server.c processor_server.c processor_set_server.c restartable_server.c task_server.c thread_act_server.c upl_server.c vm_map_server.c vm32_map_server.c
+     INSTALLHDR IOCircularDataQueueImplementation.h
+     INSTALLHDR if_arp.h
+     INSTALLHDR IOCommand.h
+     INSTALLHDR if_dl.h
+     INSTALLHDR IOCommandGate.h
+     INSTALLHDR if_llc.h
+     INSTALLHDR if_media.h
+     INSTALLHDR IOCommandPool.h
+     INSTALLHDR IOCommandQueue.h
+     INSTALLHDR if_mib.h
+     INSTALLHDR if_types.h
+     INSTALLHDR IOConditionLock.h
+     INSTALLHDR if_utun.h
+     INSTALLHDR IOCPU.h
+     INSTALLHDR if_var.h
+     INSTALLHDR IODataQueue.h
+     INSTALLHDR if_var_status.h
+     INSTALLHDR IODataQueueShared.h
+     INSTALLHDR kext_net.h
+     INSTALLHDR IODeviceMemory.h
+touch checked
+     INSTALLHDR ndrv.h
+     INSTALLHDR IODeviceTreeSupport.h
+     INSTALLHDR net_kev.h
+     INSTALLHDR IODMACommand.h
+            MIG UNDRequest.c
+     INSTALLHDR pfkeyv2.h
+     INSTALLHDR route.h
+     INSTALLHDR IODMAController.h
+     INSTALLHDR bpf_private.h
+     INSTALLHDR IODMAEventSource.h
+     INSTALLHDR if_ipsec.h
+     INSTALLHDR IOEventSource.h
+     INSTALLHDR if_mib_private.h
+            MIG UNDReplyServer.c
+     INSTALLHDR IOExtensiblePaniclog.h
+     INSTALLHDR if_private.h
+     INSTALLHDR IOFilterInterruptEventSource.h
+     INSTALLHDR if_var_private.h
+     INSTALLHDR IOGuardPageMemoryDescriptor.h
+     INSTALLHDR IOHibernatePrivate.h
+     INSTALLHDR if_vlan_var.h
+     INSTALLHDR IOInterleavedMemoryDescriptor.h
+     INSTALLHDR necp.h
+            MIG gssd_mach.c
+     INSTALLHDR IOInterruptAccounting.h
+     INSTALLHDR IOInterruptController.h
+     INSTALLHDR network_agent.h
+     INSTALLHDR IOInterruptEventSource.h
+     INSTALLHDR route_private.h
+     INSTALLHDR IOInterrupts.h
+            MIG gssd_mach.h
+     INSTALLHDR kpi_interface.h
+     INSTALLHDR IOKernelReporters.h
+     INSTALLHDR kpi_interfacefilter.h
+     INSTALLHDR IOKernelReportStructs.h
+     INSTALLHDR kpi_protocol.h
+     INSTALLHDR IOKitDebug.h
+     INSTALLHDR if_ether.h
+     INSTALLHDR IOKitDiagnosticsUserClient.h
+     INSTALLHDR init.h
+     INSTALLHDR IOKitKeys.h
+     INSTALLHDR radix.h
+     INSTALLHDR IOKitKeysPrivate.h
+     INSTALLHDR bpf_private.h
+            MIG kextd_mach.c
+     INSTALLHDR IOKitServer.h
+     INSTALLHDR if_ipsec.h
+     INSTALLHDR IOLib.h
+     INSTALLHDR if_mib_private.h
+     INSTALLHDR IOLocks.h
+     INSTALLHDR if_private.h
+            MIG kextd_mach.h
+     INSTALLHDR IOLocksPrivate.h
+     INSTALLHDR if_var_private.h
+     INSTALLHDR IOMapper.h
+     INSTALLHDR if_vlan_var.h
+     INSTALLHDR IOMapTypes.h
+     INSTALLHDR necp.h
+     INSTALLHDR IOMemoryCursor.h
+     INSTALLHDR network_agent.h
+     INSTALLHDR IOMemoryDescriptor.h
+     INSTALLHDR route_private.h
+            MIG lockd_mach.c
+     INSTALLHDR IOMessage.h
+     INSTALLHDR net_private.modulemap
+     INSTALLHDR IOMultiMemoryDescriptor.h
+     INSTALLHDR bpf.h
+     INSTALLHDR IONotifier.h
+     INSTALLHDR bpf_private.h
+     INSTALLHDR IONVRAM.h
+     INSTALLHDR content_filter.h
+            MIG lockd_mach.h
+     INSTALLHDR IOPlatformActions.h
+     INSTALLHDR dlil.h
+     INSTALLHDR IOPlatformExpert.h
+     INSTALLHDR droptap.h
+     INSTALLHDR IOPMGR.h
+     INSTALLHDR etherdefs.h
+     INSTALLHDR IOPolledInterface.h
+     INSTALLHDR ethernet.h
+     LDFILELIST libosfmk
+     INSTALLHDR IOProviderPropertyMerger.h
+     INSTALLHDR firewire.h
+     INSTALLHDR IORangeAllocator.h
+     INSTALLHDR if.h
+     INSTALLHDR IORegistryEntry.h
+     INSTALLHDR if_arp.h
+     INSTALLHDR IOReportMacros.h
+     INSTALLHDR if_bond_internal.h
+     INSTALLHDR IOReportTypes.h
+     INSTALLHDR if_bond_var.h
+     INSTALLHDR IOReturn.h
+     INSTALLHDR if_bridgevar.h
+     INSTALLHDR IORPC.h
+     INSTALLHDR if_dl.h
+     INSTALLHDR IOService.h
+     LDFILELIST libpexpert
+     INSTALLHDR if_fake_var.h
+     INSTALLHDR IOServicePM.h
+     INSTALLHDR if_ipsec.h
+     INSTALLHDR IOServiceStateNotificationEventSource.h
+     INSTALLHDR if_llc.h
+     INSTALLHDR IOSharedDataQueue.h
+     INSTALLHDR if_llreach.h
+     INSTALLHDR IOSharedLock.h
+     INSTALLHDR if_media.h
+     INSTALLHDR IOStatistics.h
+     INSTALLHDR if_mib.h
+     INSTALLHDR IOStatisticsPrivate.h
+     LDFILELIST liblibkern
+     INSTALLHDR if_mib_private.h
+     INSTALLHDR IOSubMemoryDescriptor.h
+     INSTALLHDR if_pflog.h
+     INSTALLHDR IOSyncer.h
+     INSTALLHDR if_ports_used.h
+     INSTALLHDR IOTimerEventSource.h
+     INSTALLHDR if_ppp.h
+     INSTALLHDR IOTimeStamp.h
+     INSTALLHDR if_private.h
+     INSTALLHDR IOTypes.h
+     INSTALLHDR if_redirect.h
+     LDFILELIST liblibsa
+     INSTALLHDR IOUserClient.h
+     INSTALLHDR if_types.h
+     INSTALLHDR IOUserServer.h
+     INSTALLHDR if_utun.h
+     INSTALLHDR IOWorkLoop.h
+     INSTALLHDR if_var.h
+     INSTALLHDR OSMessageNotification.h
+     INSTALLHDR if_var_private.h
+     INSTALLHDR PassthruInterruptController.h
+     INSTALLHDR if_var_status.h
+     INSTALLHDR system.h
+     INSTALLHDR if_vlan_var.h
+     INSTALLHDR iptap.h
+     INSTALLHDR kctl_test.h
+     INSTALLHDR kext_net.h
+     LDFILELIST libsan
+     INSTALLHDR lacp.h
+     INSTALLHDR md5.h
+     INSTALLHDR multi_layer_pkt_log.h
+     INSTALLHDR sha1.h
+     INSTALLHDR nat464_utils.h
+     INSTALLHDR aes.h
+     INSTALLHDR ndrv.h
+     INSTALLHDR sha2.h
+     INSTALLHDR ndrv_var.h
+     INSTALLHDR md5.h
+     INSTALLHDR necp.h
+     INSTALLHDR sha1.h
+     INSTALLHDR net_api_stats.h
+     INSTALLHDR aes.h
+     INSTALLHDR net_kev.h
+     INSTALLHDR sha2.h
+     INSTALLHDR net_log_common.h
+     INSTALLHDR net_perf.h
+             CC lastkerneldataconst.o
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/local/include/kernel' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/local/include/iBoot' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk//System/Library/Frameworks/Kernel.framework/Versions/A/PrivateHeaders/AppleFeatures' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk//System/Library/Frameworks/Kernel.framework/Versions/A/PrivateHeaders/platform' [-Wmissing-include-dirs]
+     INSTALLHDR netsrc.h
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:75:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_types.h:35:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/port.h:90:
+In file included from /Users/runner/work/ioni-os/ioni-os/EXTERNAL_HEADERS/stdint.h:23:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/machine/types.h:35:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/types.h:73:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:62:33: warning: identifier '__int8_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   62 | typedef __signed char           __int8_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:66:33: warning: identifier '__uint8_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   66 | typedef unsigned char           __uint8_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:67:33: warning: identifier '__int16_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   67 | typedef short                   __int16_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:68:33: warning: identifier '__uint16_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   68 | typedef unsigned short          __uint16_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:69:33: warning: identifier '__int32_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   69 | typedef int                     __int32_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:70:33: warning: identifier '__uint32_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   70 | typedef unsigned int            __uint32_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:71:33: warning: identifier '__int64_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   71 | typedef long long               __int64_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:72:33: warning: identifier '__uint64_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   72 | typedef unsigned long long      __uint64_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:74:33: warning: identifier '__darwin_intptr_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   74 | typedef long                    __darwin_intptr_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:75:33: warning: identifier '__darwin_natural_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   75 | typedef unsigned int            __darwin_natural_t;
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:95:33: warning: identifier '__darwin_ct_rune_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   95 | typedef int                     __darwin_ct_rune_t;     /* ct_rune_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:102:18: warning: identifier '__mbstate8' is reserved because it starts with '__' [-Wreserved-identifier]
+  102 |         char            __mbstate8[128];
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:104:3: warning: identifier '__mbstate_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  104 | } __mbstate_t;
+      |   ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:106:33: warning: identifier '__darwin_mbstate_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  106 | typedef __mbstate_t             __darwin_mbstate_t;     /* mbstate_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:111:33: warning: identifier '__darwin_ptrdiff_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  111 | typedef __PTRDIFF_TYPE__        __darwin_ptrdiff_t;     /* ptr1 - ptr2 */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:121:33: warning: identifier '__darwin_size_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  121 | typedef __SIZE_TYPE__           __darwin_size_t;        /* sizeof() */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:129:33: warning: identifier '__darwin_va_list' is reserved because it starts with '__' [-Wreserved-identifier]
+  129 | typedef __builtin_va_list       __darwin_va_list;       /* va_list */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:137:33: warning: identifier '__darwin_wchar_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  137 | typedef __WCHAR_TYPE__          __darwin_wchar_t;       /* wchar_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:142:33: warning: identifier '__darwin_rune_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  142 | typedef __darwin_wchar_t        __darwin_rune_t;        /* rune_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:145:33: warning: identifier '__darwin_wint_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  145 | typedef __WINT_TYPE__           __darwin_wint_t;        /* wint_t */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:150:33: warning: identifier '__darwin_clock_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  150 | typedef unsigned long           __darwin_clock_t;       /* clock() */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:151:33: warning: identifier '__darwin_socklen_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  151 | typedef __uint32_t              __darwin_socklen_t;     /* socklen_t (duh) */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:152:33: warning: identifier '__darwin_ssize_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  152 | typedef long                    __darwin_ssize_t;       /* byte count or error */
+      |                                 ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/_types.h:153:33: warning: identifier '__darwin_time_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  153 | typedef long                    __darwin_time_t;        /* time() */
+      |                                 ^
+     INSTALLHDR IOBufferMemoryDescriptor.iig
+     INSTALLHDR network_agent.h
+     INSTALLHDR IODataQueueDispatchSource.iig
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:75:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_types.h:104:16: warning: identifier '_vm_map' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+  104 | typedef struct _vm_map          *vm_map_t, *vm_map_read_t, *vm_map_inspect_t;
+      |                ^
+     INSTALLHDR ntstat.h
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:79:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/os/overflow.h:49:1: warning: identifier '__os_warn_unused' is reserved because it starts with '__' [-Wreserved-identifier]
+   49 | __os_warn_unused(__const bool x)
+      | ^
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:134:9: warning: identifier '__ovr' is reserved because it starts with '__' [-Wreserved-identifier]
+  134 |         return round_page_overflow(in, out);
+      |                ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:126:15: note: expanded from macro 'round_page_overflow'
+  126 |                 bool __ovr = os_add_overflow(in, (__typeof__(*out))PAGE_MASK, out); \
+      |                      ^
+     INSTALLHDR IODispatchQueue.iig
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:270:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/debug.h:32:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/kcdata.h:243:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:56:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/types.h:79:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:78:25: warning: identifier '__darwin_blkcnt_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   78 | typedef __int64_t       __darwin_blkcnt_t;      /* total blocks */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:79:25: warning: identifier '__darwin_blksize_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   79 | typedef __int32_t       __darwin_blksize_t;     /* preferred block size */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:80:25: warning: identifier '__darwin_dev_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   80 | typedef __int32_t       __darwin_dev_t;         /* dev_t */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:81:25: warning: identifier '__darwin_fsblkcnt_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   81 | typedef unsigned int    __darwin_fsblkcnt_t;    /* Used by statvfs and fstatvfs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:82:25: warning: identifier '__darwin_fsfilcnt_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   82 | typedef unsigned int    __darwin_fsfilcnt_t;    /* Used by statvfs and fstatvfs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:83:25: warning: identifier '__darwin_gid_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   83 | typedef __uint32_t      __darwin_gid_t;         /* [???] process and group IDs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:84:25: warning: identifier '__darwin_id_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   84 | typedef __uint32_t      __darwin_id_t;          /* [XSI] pid_t, uid_t, or gid_t*/
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:85:25: warning: identifier '__darwin_ino64_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   85 | typedef __uint64_t      __darwin_ino64_t;       /* [???] Used for 64 bit inodes */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:89:25: warning: identifier '__darwin_ino_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   89 | typedef __uint32_t      __darwin_ino_t;         /* [???] Used for inodes */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:91:28: warning: identifier '__darwin_mach_port_name_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   91 | typedef __darwin_natural_t __darwin_mach_port_name_t; /* Used by mach */
+      |                            ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:92:35: warning: identifier '__darwin_mach_port_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   92 | typedef __darwin_mach_port_name_t __darwin_mach_port_t; /* Used by mach */
+      |                                   ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:93:25: warning: identifier '__darwin_mode_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   93 | typedef __uint16_t      __darwin_mode_t;        /* [???] Some file attributes */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:94:25: warning: identifier '__darwin_off_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   94 | typedef __int64_t       __darwin_off_t;         /* [???] Used for file sizes */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:95:25: warning: identifier '__darwin_pid_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   95 | typedef __int32_t       __darwin_pid_t;         /* [???] process and group IDs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:96:25: warning: identifier '__darwin_sigset_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   96 | typedef __uint32_t      __darwin_sigset_t;      /* [???] signal set */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:97:25: warning: identifier '__darwin_suseconds_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   97 | typedef __int32_t       __darwin_suseconds_t;   /* [???] microseconds */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:98:25: warning: identifier '__darwin_uid_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   98 | typedef __uint32_t      __darwin_uid_t;         /* [???] user IDs */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:99:25: warning: identifier '__darwin_useconds_t' is reserved because it starts with '__' [-Wreserved-identifier]
+   99 | typedef __uint32_t      __darwin_useconds_t;    /* [???] microseconds */
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:101:25: warning: identifier '__darwin_uuid_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  101 | typedef unsigned char   __darwin_uuid_t[16];
+      |                         ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types.h:102:17: warning: identifier '__darwin_uuid_string_t' is reserved because it starts with '__' [-Wreserved-identifier]
+  102 | typedef char    __darwin_uuid_string_t[37];
+      |                 ^
+     INSTALLHDR packet_mangler.h
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:270:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/debug.h:32:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/kcdata.h:243:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:56:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/types.h:81:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/machine/endian.h:35:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/i386/endian.h:85:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_endian.h:132:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/libkern/_OSByteOrder.h:58:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/libkern/i386/_OSByteOrder.h:50:1: warning: identifier '_OSSwapInt16' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+   50 | _OSSwapInt16(
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/libkern/i386/_OSByteOrder.h:59:1: warning: identifier '_OSSwapInt32' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+   59 | _OSSwapInt32(
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/libkern/libkern/i386/_OSByteOrder.h:74:1: warning: identifier '_OSSwapInt64' is reserved because it starts with '_' followed by a capital letter [-Wreserved-identifier]
+   74 | _OSSwapInt64(
+      | ^
+     INSTALLHDR IODispatchSource.iig
+     INSTALLHDR pfkeyv2.h
+     INSTALLHDR IODMACommand.iig
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:270:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/debug.h:32:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/kcdata.h:243:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:56:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/types.h:187:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types/_fd_def.h:113:1: warning: identifier '__darwin_fd_isset' is reserved because it starts with '__' [-Wreserved-identifier]
+  113 | __darwin_fd_isset(int _fd, const struct fd_set *_p)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types/_fd_def.h:119:1: warning: identifier '__darwin_fd_set' is reserved because it starts with '__' [-Wreserved-identifier]
+  119 | __darwin_fd_set(int _fd, struct fd_set *const _p)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/bsd/sys/_types/_fd_def.h:125:1: warning: identifier '__darwin_fd_clr' is reserved because it starts with '__' [-Wreserved-identifier]
+  125 | __darwin_fd_clr(int _fd, struct fd_set *const _p)
+      | ^
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:270:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/debug.h:32:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/kcdata.h:243:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:234:1: warning: identifier '__xnu_fortify_trap_write' is reserved because it starts with '__' [-Wreserved-identifier]
+  234 | __xnu_fortify_trap_write(void)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:240:1: warning: identifier '__xnu_fortify_trap_read' is reserved because it starts with '__' [-Wreserved-identifier]
+  240 | __xnu_fortify_trap_read(void)
+      | ^
+     INSTALLHDR pfvar.h
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:292:13: warning: identifier '__xnu_bcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  292 |         extern int __xnu_bcmp(
+      |                    ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:318:13: warning: identifier '__xnu_memcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  318 |         extern int __xnu_memcmp(
+      |                    ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:355:14: warning: identifier '__xnu_bzero' is reserved because it starts with '__' [-Wreserved-identifier]
+  355 |         extern void __xnu_bzero(
+      |                     ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:379:14: warning: identifier '__xnu_memset' is reserved because it starts with '__' [-Wreserved-identifier]
+  379 |         extern void __xnu_memset(
+      |                     ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:408:15: warning: identifier '__xnu_memmove' is reserved because it starts with '__' [-Wreserved-identifier]
+  408 |         extern void *__xnu_memmove(
+      |                      ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:425:1: warning: identifier '__nochk_memmove' is reserved because it starts with '__' [-Wreserved-identifier]
+  425 | __nochk_memmove(
+      | ^
+     INSTALLHDR IOEventLink.iig
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:463:1: warning: identifier '__nochk_bcopy' is reserved because it starts with '__' [-Wreserved-identifier]
+  463 | __nochk_bcopy(
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:492:1: warning: identifier '__nochk_memcpy' is reserved because it starts with '__' [-Wreserved-identifier]
+  492 | __nochk_memcpy(
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:584:13: warning: identifier '__xnu_strlcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  584 |         extern int __xnu_strlcmp(
+      |                    ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:609:13: warning: identifier '__xnu_strbufcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  609 |         extern int __xnu_strbufcmp(
+      |                    ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:676:13: warning: identifier '__xnu_strlcasecmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  676 |         extern int __xnu_strlcasecmp(
+      |                    ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:700:13: warning: identifier '__xnu_strbufcasecmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  700 |         extern int __xnu_strbufcasecmp(
+      |                    ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:757:16: warning: identifier '__xnu_strlcpy' is reserved because it starts with '__' [-Wreserved-identifier]
+  757 |         extern size_t __xnu_strlcpy(
+      |                       ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:823:21: warning: identifier '__xnu_strbufcpy' is reserved because it starts with '__' [-Wreserved-identifier]
+  823 |         extern const char *__xnu_strbufcpy(
+      |                            ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:852:16: warning: identifier '__xnu_strlcat' is reserved because it starts with '__' [-Wreserved-identifier]
+  852 |         extern size_t __xnu_strlcat(
+      |                       ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:888:21: warning: identifier '__xnu_strbufcat' is reserved because it starts with '__' [-Wreserved-identifier]
+  888 |         extern const char *__xnu_strbufcat(
+      |                            ^
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:270:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/debug.h:32:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/kcdata.h:243:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/string.h:959:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:38:1: warning: identifier '__nosan_memcpy' is reserved because it starts with '__' [-Wreserved-identifier]
+   38 | __nosan_memcpy(void *dst __sized_by(sz), const void *src __sized_by(sz), size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:44:1: warning: identifier '__nosan_memset' is reserved because it starts with '__' [-Wreserved-identifier]
+   44 | __nosan_memset(void *dst __sized_by(sz), int c, size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:50:1: warning: identifier '__nosan_memmove' is reserved because it starts with '__' [-Wreserved-identifier]
+   50 | __nosan_memmove(void *dst __sized_by(sz), const void *src __sized_by(sz), size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:55:1: warning: identifier '__nosan_bcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+   55 | __nosan_bcmp(const void *a __sized_by(sz), const void *b __sized_by(sz), size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:60:1: warning: identifier '__nosan_bcopy' is reserved because it starts with '__' [-Wreserved-identifier]
+   60 | __nosan_bcopy(const void *src __sized_by(sz), void *dst __sized_by(sz), size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:65:1: warning: identifier '__nosan_memcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+   65 | __nosan_memcmp(const void *a __sized_by(sz), const void *b __sized_by(sz), size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:70:1: warning: identifier '__nosan_bzero' is reserved because it starts with '__' [-Wreserved-identifier]
+   70 | __nosan_bzero(void *dst __sized_by(sz), size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:76:1: warning: identifier '__nosan_strlcpy' is reserved because it starts with '__' [-Wreserved-identifier]
+   76 | __nosan_strlcpy(char *__sized_by(sz)dst, const char *__null_terminated src, size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:81:1: warning: identifier '__nosan_strlcat' is reserved because it starts with '__' [-Wreserved-identifier]
+   81 | __nosan_strlcat(char *__sized_by(sz)dst, const char *__null_terminated src, size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:86:1: warning: identifier '__nosan_strnlen' is reserved because it starts with '__' [-Wreserved-identifier]
+   86 | __nosan_strnlen(const char *__counted_by(sz)src, size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:91:1: warning: identifier '__nosan_strlen' is reserved because it starts with '__' [-Wreserved-identifier]
+   91 | __nosan_strlen(const char *__null_terminated src)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:96:1: warning: identifier '__nosan_strcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+   96 | __nosan_strcmp(const char *__null_terminated s1, const char *__null_terminated s2)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:101:1: warning: identifier '__nosan_strncmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  101 | __nosan_strncmp(const char *__unsafe_indexable s1, const char *__unsafe_indexable s2, size_t n)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:106:1: warning: identifier '__nosan_strlcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  106 | __nosan_strlcmp(const char *__counted_by(n)s1, const char *s2, size_t n)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:111:1: warning: identifier '__nosan_strbufcmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  111 | __nosan_strbufcmp(const char *__counted_by(s1len)s1, size_t s1len, const char *__counted_by(s2len)s2, size_t s2len)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:116:1: warning: identifier '__nosan_strcasecmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  116 | __nosan_strcasecmp(const char *__null_terminated s1, const char *__null_terminated s2)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:121:1: warning: identifier '__nosan_strncasecmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  121 | __nosan_strncasecmp(const char *__unsafe_indexable s1, const char *__unsafe_indexable s2, size_t n)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:126:1: warning: identifier '__nosan_strlcasecmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  126 | __nosan_strlcasecmp(const char *__counted_by(n)s1, const char *s2, size_t n)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:131:1: warning: identifier '__nosan_strbufcasecmp' is reserved because it starts with '__' [-Wreserved-identifier]
+  131 | __nosan_strbufcasecmp(const char *__counted_by(s1len)s1, size_t s1len, const char *__counted_by(s2len)s2, size_t s2len)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:137:1: warning: identifier '__nosan_strncpy' is reserved because it starts with '__' [-Wreserved-identifier]
+  137 | __nosan_strncpy(char *dst, const char *src, size_t sz)
+      | ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/san/san/memintrinsics.h:149:1: warning: identifier '__nosan_strncat' is reserved because it starts with '__' [-Wreserved-identifier]
+  149 | __nosan_strncat(char *dst, const char *src, size_t sz)
+      | ^
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:270:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/debug.h:45:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/percpu.h:284:14: warning: identifier '__percpu_section_start' is reserved because it starts with '__' [-Wreserved-identifier]
+  284 |         extern char __percpu_section_start[0] __SECTION_START_SYM("__DATA", "__percpu");
+      |                     ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/percpu.h:291:14: warning: identifier '__percpu_section_end' is reserved because it starts with '__' [-Wreserved-identifier]
+  291 |         extern char __percpu_section_end[0] __SECTION_END_SYM("__DATA", "__percpu");
+      |                     ^
+     INSTALLHDR pktap.h
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:270:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/debug.h:178:8: warning: identifier '_dyld_cache_header' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+  178 | struct _dyld_cache_header {
+      |        ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/debug.h:218:8: warning: identifier '_dyld_cache_image_text_info' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+  218 | struct _dyld_cache_image_text_info {
+      |        ^
+     INSTALLHDR IOExtensiblePaniclog.iig
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:271:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/vm/vm_memtag.h:37:
+In file included from /Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/kern/assert.h:69:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/machine/static_if.h:274:13: warning: identifier '__static_if_key_delta' is reserved because it starts with '__' [-Wreserved-identifier]
+  274 | extern void __static_if_key_delta(
+      |             ^
+In file included from /Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:29:
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:443:6: warning: identifier '__ovr' is reserved because it starts with '__' [-Wreserved-identifier]
+  443 |         if (round_page_overflow(x, &x)) {
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:126:15: note: expanded from macro 'round_page_overflow'
+  126 |                 bool __ovr = os_add_overflow(in, (__typeof__(*out))PAGE_MASK, out); \
+      |                      ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:452:6: warning: identifier '__ovr' is reserved because it starts with '__' [-Wreserved-identifier]
+  452 |         if (round_page_overflow(x, &x)) {
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:126:15: note: expanded from macro 'round_page_overflow'
+  126 |                 bool __ovr = os_add_overflow(in, (__typeof__(*out))PAGE_MASK, out); \
+      |                      ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:461:6: warning: identifier '__ovr' is reserved because it starts with '__' [-Wreserved-identifier]
+  461 |         if (round_page_overflow(x, &x)) {
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:126:15: note: expanded from macro 'round_page_overflow'
+  126 |                 bool __ovr = os_add_overflow(in, (__typeof__(*out))PAGE_MASK, out); \
+      |                      ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:470:6: warning: identifier '__ovr' is reserved because it starts with '__' [-Wreserved-identifier]
+  470 |         if (round_page_overflow(x, &x)) {
+      |             ^
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/EXPORT_HDRS/osfmk/mach/vm_param.h:126:15: note: expanded from macro 'round_page_overflow'
+  126 |                 bool __ovr = os_add_overflow(in, (__typeof__(*out))PAGE_MASK, out); \
+      |                      ^
+/Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:49:65: warning: identifier '_lastkerneldataconst' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   49 | const vm_offset_t    __attribute__((section("__DATA,__data")))  _lastkerneldataconst         = (vm_offset_t)&data_const_padding[0];
+      |                                                                 ^
+/Users/runner/work/ioni-os/ioni-os/libsa/lastkerneldataconst.c:50:65: warning: identifier '_lastkerneldataconst_padsize' is reserved because it starts with '_' at global scope [-Wreserved-identifier]
+   50 | const vm_size_t      __attribute__((section("__DATA,__data")))  _lastkerneldataconst_padsize = sizeof(data_const_padding);
+      |                                                                 ^
+     INSTALLHDR ppp_defs.h
+     INSTALLHDR IOInterruptDispatchSource.iig
+103 warnings generated.
+     INSTALLHDR radix.h
+     INSTALLHDR IOMemoryDescriptor.iig
+             CC nonlto.o
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/local/include/kernel' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/local/include/iBoot' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk//System/Library/Frameworks/Kernel.framework/Versions/A/PrivateHeaders/AppleFeatures' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk//System/Library/Frameworks/Kernel.framework/Versions/A/PrivateHeaders/platform' [-Wmissing-include-dirs]
+     INSTALLHDR raw_cb.h
+/Users/runner/work/ioni-os/ioni-os/libsa/nonlto.c:33:33: warning: identifier '__not_used_at_all__' is reserved because it starts with '__' [-Wreserved-identifier]
+   33 | int __attribute__((__unused__)) __not_used_at_all__;
+      |                                 ^
+1 warning generated.
+             CC version.o
+     INSTALLHDR IOMemoryMap.iig
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/local/include/kernel' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk/usr/local/include/iBoot' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk//System/Library/Frameworks/Kernel.framework/Versions/A/PrivateHeaders/AppleFeatures' [-Wmissing-include-dirs]
+clang: warning: no such include directory: '/Applications/Xcode_26.6.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk//System/Library/Frameworks/Kernel.framework/Versions/A/PrivateHeaders/platform' [-Wmissing-include-dirs]
+     INSTALLHDR remote_vif.h
+/Users/runner/work/ioni-os/ioni-os/BUILD/obj/RELEASE_X86_64/version.c:39:12: warning: identifier '__kernelVersionString' is reserved because it starts with '__' [-Wreserved-identifier]
+   39 | const char __kernelVersionString[] __attribute__((used)) = "@(#)VERSION: " OSTYPE " Kernel Version 25.6.0: Fri Oct 23 19:16:52 UTC 2026; runner:ioni-os/BUILD/obj/RELEASE_X86_64";
+      |            ^
+1 warning generated.
+        LIBTOOL libkernel.a
+     INSTALLHDR IOService.iig
+     INSTALLHDR route.h
+     INSTALLHDR IOServiceNotificationDispatchSource.iig
+     INSTALLHDR route_private.h
+     INSTALLHDR IOServiceStateNotificationDispatchSource.iig
+     INSTALLHDR bpf.h
+     INSTALLHDR IOUserClient.iig
+     INSTALLHDR bpf_compat.h
+     INSTALLHDR IOUserServer.iig
+     INSTALLHDR bpf_private.h
+     INSTALLHDR IOWorkGroup.iig
+     INSTALLHDR bpfdesc.h
+     INSTALLHDR OSAction.iig
+     INSTALLHDR content_filter.h
+     INSTALLHDR OSObject.iig
+     INSTALLHDR dlil.h
+     INSTALLHDR IOBufferMemoryDescriptor.h
+     INSTALLHDR droptap.h
+     INSTALLHDR etherdefs.h
+     INSTALLHDR IODataQueueDispatchSource.h
+     INSTALLHDR ethernet.h
+     INSTALLHDR IODispatchQueue.h
+      INSTALLPY usertaskdebugging/__init__.py
+     INSTALLHDR firewire.h
+     INSTALLHDR IODispatchSource.h
+     INSTALLHDR flowadv.h
+     INSTALLHDR IODMACommand.h
+     INSTALLHDR if.h
+     INSTALLHDR IOEventLink.h
+     INSTALLHDR if_arp.h
+     INSTALLHDR IOExtensiblePaniclog.h
+     INSTALLHDR IOInterruptDispatchSource.h
+     INSTALLHDR if_bond_internal.h
+     INSTALLHDR IOMemoryDescriptor.h
+     INSTALLHDR if_bond_var.h
+     INSTALLHDR IOMemoryMap.h
+     INSTALLHDR if_bridgevar.h
+     INSTALLHDR IOService.h
+     INSTALLHDR if_dl.h
+     INSTALLHDR IOServiceNotificationDispatchSource.h
+     INSTALLHDR if_ether.h
+      INSTALLPY usertaskdebugging/gdbserver.py
+     INSTALLHDR IOServiceStateNotificationDispatchSource.h
+     INSTALLHDR if_fake_var.h
+     INSTALLHDR IOUserClient.h
+      INSTALLPY usertaskdebugging/interface.py
+     INSTALLHDR if_ipsec.h
+     INSTALLHDR IOUserServer.h
+     INSTALLHDR IOWorkGroup.h
+     INSTALLHDR if_llc.h
+      INSTALLPY usertaskdebugging/rsprotocol.py
+     INSTALLHDR OSAction.h
+     INSTALLHDR if_llreach.h
+     INSTALLHDR OSObject.h
+     INSTALLHDR if_media.h
+      INSTALLPY usertaskdebugging/target.py
+     INSTALLHDR IOTypes.h
+     INSTALLHDR if_mib.h
+     INSTALLHDR IOReturn.h
+     INSTALLHDR if_mib_private.h
+      INSTALLPY usertaskdebugging/userprocess.py
+     INSTALLHDR IORPC.h
+     INSTALLHDR if_pflog.h
+     INSTALLHDR IOKitKeys.h
+     INSTALLHDR if_ports_used.h
+      INSTALLPY core/__init__.py
+     INSTALLHDR IOKernelReportStructs.h
+     INSTALLHDR if_ppp.h
+     INSTALLHDR IOReportTypes.h
+     INSTALLHDR if_private.h
+      INSTALLPY core/caching.py
+     INSTALLHDR queue_implementation.h
+     INSTALLHDR if_redirect.h
+     INSTALLHDR macro_help.h
+     INSTALLHDR if_types.h
+      INSTALLPY core/iterators.py
+     INSTALLHDR bounded_ptr.h
+     INSTALLHDR if_utun.h
+     INSTALLHDR bounded_array.h
+     INSTALLHDR if_var.h
+      INSTALLPY core/configuration.py
+     INSTALLHDR bounded_array_ref.h
+     INSTALLHDR if_var_private.h
+     INSTALLHDR bounded_ptr_fwd.h
+     INSTALLHDR if_var_status.h
+      INSTALLPY core/cvalue.py
+     INSTALLHDR OSBoundedArray.h
+     INSTALLHDR if_vlan_var.h
+     INSTALLHDR OSBoundedArrayRef.h
+      INSTALLPY core/io.py
+     INSTALLHDR init.h
+     INSTALLHDR OSBoundedPtr.h
+     INSTALLHDR iptap.h
+     INSTALLHDR OSBoundedPtrFwd.h
+      INSTALLPY core/kernelcore.py
+     INSTALLHDR kctl_test.h
+     INSTALLHDR safe_allocation.h
+     INSTALLHDR kext_net.h
+      INSTALLPY core/lazytarget.py
+     INSTALLHDR kpi_interface.h
+     INSTALLHDR IOBufferMemoryDescriptor.h
+     INSTALLHDR kpi_interfacefilter.h
+     INSTALLHDR IODataQueueDispatchSource.h
+      INSTALLPY core/lldbwrap.py
+     INSTALLHDR kpi_protocol.h
+     INSTALLHDR IODispatchQueue.h
+     INSTALLHDR lacp.h
+     INSTALLHDR IODispatchSource.h
+      INSTALLPY core/operating_system.py
+     INSTALLHDR multi_layer_pkt_log.h
+     INSTALLHDR IODMACommand.h
+     INSTALLHDR IOEventLink.h
+     INSTALLHDR nat464_utils.h
+     INSTALLHDR IOExtensiblePaniclog.h
+      INSTALLPY core/pointer.py
+     INSTALLHDR ndrv.h
+     INSTALLHDR IOInterruptDispatchSource.h
+     INSTALLHDR ndrv_var.h
+     INSTALLHDR IOMemoryDescriptor.h
+      INSTALLPY core/standard.py
+     INSTALLHDR necp.h
+     INSTALLHDR IOMemoryMap.h
+     INSTALLHDR net_api_stats.h
+     INSTALLHDR IOService.h
+      INSTALLPY core/xnu_lldb_init.py
+     INSTALLHDR net_kev.h
+     INSTALLHDR IOServiceNotificationDispatchSource.h
+     INSTALLHDR net_log_common.h
+     INSTALLHDR IOServiceStateNotificationDispatchSource.h
+      INSTALLPY cpc.py
+     INSTALLHDR net_osdep.h
+     INSTALLHDR IOUserClient.h
+     INSTALLHDR net_perf.h
+      INSTALLPY kmemory/__init__.py
+     INSTALLHDR IOUserServer.h
+     INSTALLHDR netsrc.h
+     INSTALLHDR IOWorkGroup.h
+     INSTALLHDR network_agent.h
+      INSTALLPY kmemory/btlog.py
+     INSTALLHDR OSAction.h
+     INSTALLHDR ntstat.h
+     INSTALLHDR OSObject.h
+     INSTALLHDR packet_mangler.h
+     INSTALLHDR IOTypes.h
+      INSTALLPY kmemory/kmem.py
+     INSTALLHDR pfkeyv2.h
+     INSTALLHDR IOReturn.h
+     INSTALLHDR pfvar.h
+      INSTALLPY kmemory/vm.py
+     INSTALLHDR IORPC.h
+     INSTALLHDR pktap.h
+     INSTALLHDR IOKitKeys.h
+     INSTALLHDR ppp_comp.h
+     INSTALLHDR IOKernelReportStructs.h
+      INSTALLPY kmemory/whatis.py
+     INSTALLHDR ppp_defs.h
+     INSTALLHDR IOReportTypes.h
+     INSTALLHDR radix.h
+      INSTALLPY kmemory/zone.py
+     INSTALLHDR queue_implementation.h
+     INSTALLHDR raw_cb.h
+     INSTALLHDR macro_help.h
+     INSTALLHDR remote_vif.h
+      INSTALLPY plugins/__init__.py
+     INSTALLHDR bounded_ptr.h
+     INSTALLHDR route.h
+     INSTALLHDR bounded_array.h
+     INSTALLHDR route_private.h
+      INSTALLPY plugins/zprint_perf_log.py
+     INSTALLHDR bounded_array_ref.h
+     INSTALLHDR zlib.h
+     INSTALLHDR bounded_ptr_fwd.h
+      INSTALLPY sysregdoc/AArch64-esr_el1.xml
+     INSTALLHDR OSBoundedArray.h
+     INSTALLHDR OSBoundedArrayRef.h
+      INSTALLPY bank.py
+     INSTALLHDR OSBoundedPtr.h
+     INSTALLHDR OSBoundedPtrFwd.h
+      INSTALLPY turnstile.py
+     INSTALLHDR bootp.h
+     INSTALLHDR safe_allocation.h
+     INSTALLHDR icmp6.h
+     INSTALLHDR IOBufferMemoryDescriptor.iig
+      INSTALLPY kevent.py
+     INSTALLHDR if_ether.h
+     INSTALLHDR IODataQueueDispatchSource.iig
+     INSTALLHDR icmp_var.h
+     INSTALLHDR IODispatchQueue.iig
+      INSTALLPY workqueue.py
+     INSTALLHDR igmp.h
+     INSTALLHDR IODispatchSource.iig
+     INSTALLHDR igmp_var.h
+     INSTALLHDR IODMACommand.iig
+      INSTALLPY ulock.py
+     INSTALLHDR in.h
+     INSTALLHDR IOEventLink.iig
+     INSTALLHDR in_pcb.h
+     INSTALLHDR IOExtensiblePaniclog.iig
+      INSTALLPY xnu.py
+     INSTALLHDR in_systm.h
+     INSTALLHDR IOInterruptDispatchSource.iig
+     INSTALLHDR in_var.h
+     INSTALLHDR IOMemoryDescriptor.iig
+      INSTALLPY xnudefines.py
+     INSTALLHDR ip.h
+     INSTALLHDR IOMemoryMap.iig
+     INSTALLHDR ip6.h
+     INSTALLHDR IOService.iig
+      INSTALLPY ktrace.py
+     INSTALLHDR ip_icmp.h
+     INSTALLHDR IOServiceNotificationDispatchSource.iig
+     INSTALLHDR ip_var.h
+     INSTALLHDR IOServiceStateNotificationDispatchSource.iig
+     INSTALLHDR tcp.h
+      INSTALLPY macho.py
+     INSTALLHDR IOUserClient.iig
+     INSTALLHDR tcp_fsm.h
+     INSTALLHDR IOUserServer.iig
+      INSTALLPY mbufdefines.py
+     INSTALLHDR tcp_seq.h
+     INSTALLHDR IOWorkGroup.iig
+     INSTALLHDR tcp_timer.h
+      INSTALLPY netdefines.py
+     INSTALLHDR OSAction.iig
+     INSTALLHDR tcp_var.h
+     INSTALLHDR OSObject.iig
+      INSTALLPY ntstat.py
+     INSTALLHDR tcpip.h
+     INSTALLHDR IOBufferMemoryDescriptor.h
+     INSTALLHDR udp.h
+     INSTALLHDR IODataQueueDispatchSource.h
+     INSTALLHDR udp_var.h
+      INSTALLPY routedefines.py
+     INSTALLHDR IODispatchQueue.h
+     INSTALLHDR netinet.modulemap
+     INSTALLHDR IODispatchSource.h
+     INSTALLHDR bootp.h
+      INSTALLPY ipc.py
+     INSTALLHDR IODMACommand.h
+     INSTALLHDR icmp6.h
+     INSTALLHDR IOEventLink.h
+     INSTALLHDR if_ether.h
+      INSTALLPY ipcimportancedetail.py
+     INSTALLHDR IOExtensiblePaniclog.h
+     INSTALLHDR icmp_var.h
+     INSTALLHDR IOInterruptDispatchSource.h
+      INSTALLPY kcdata.py
+     INSTALLHDR igmp.h
+     INSTALLHDR IOMemoryDescriptor.h
+     INSTALLHDR igmp_var.h
+     INSTALLHDR IOMemoryMap.h
+     INSTALLHDR IOService.h
+      INSTALLPY scheduler.py
+     INSTALLHDR in.h
+     INSTALLHDR IOServiceNotificationDispatchSource.h
+     INSTALLHDR in_pcb.h
+     INSTALLHDR IOServiceStateNotificationDispatchSource.h
+     INSTALLHDR in_systm.h
+     INSTALLHDR IOUserClient.h
+      INSTALLPY structanalyze.py
+     INSTALLHDR in_var.h
+     INSTALLHDR IOUserServer.h
+     INSTALLHDR ip.h
+     INSTALLHDR IOWorkGroup.h
+      INSTALLPY pmap.py
+     INSTALLHDR ip6.h
+     INSTALLHDR OSAction.h
+     INSTALLHDR ip_icmp.h
+     INSTALLHDR OSObject.h
+     INSTALLHDR ip_var.h
+      INSTALLPY memory.py
+     INSTALLHDR IOTypes.h
+     INSTALLHDR tcp.h
+     INSTALLHDR IOReturn.h
+     INSTALLHDR tcp_fsm.h
+     INSTALLHDR IORPC.h
+     INSTALLHDR tcp_seq.h
+     INSTALLHDR IOKitKeys.h
+      INSTALLPY memorystatus.py
+     INSTALLHDR tcp_timer.h
+     INSTALLHDR IOKernelReportStructs.h
+     INSTALLHDR tcp_var.h
+     INSTALLHDR IOReportTypes.h
+      INSTALLPY mbufs.py
+     INSTALLHDR tcpip.h
+     INSTALLHDR queue_implementation.h
+     INSTALLHDR udp.h
+     INSTALLHDR macro_help.h
+      INSTALLPY microstackshot.py
+     INSTALLHDR udp_var.h
+     INSTALLHDR bounded_ptr.h
+     INSTALLHDR in_private.h
+     INSTALLHDR bounded_array.h
+      INSTALLPY net.py
+     INSTALLHDR in_stat.h
+     INSTALLHDR bounded_array_ref.h
+     INSTALLHDR bounded_ptr_fwd.h
+     INSTALLHDR tcp_private.h
+     INSTALLHDR OSBoundedArray.h
+     INSTALLHDR mptcp_var.h
+      INSTALLPY skywalk.py
+     INSTALLHDR OSBoundedArrayRef.h
+     INSTALLHDR kpi_ipfilter.h
+     INSTALLHDR OSBoundedPtr.h
+     INSTALLHDR in_arp.h
+      INSTALLPY ioreg.py
+     INSTALLHDR OSBoundedPtrFwd.h
+     INSTALLHDR in_private.h
+     INSTALLHDR safe_allocation.h
+     INSTALLHDR in_stat.h
+     INSTALLHDR IOBufferMemoryDescriptor.h
+      INSTALLPY utils.py
+     INSTALLHDR tcp_private.h
+     INSTALLHDR IODataQueueDispatchSource.h
+     INSTALLHDR mptcp_var.h
+     INSTALLHDR IODispatchQueue.h
+      INSTALLPY kdp.py
+     INSTALLHDR netinet_private.modulemap
+     INSTALLHDR IODispatchSource.h
+     INSTALLHDR bootp.h
+     INSTALLHDR IODMACommand.h
+     INSTALLHDR flow_divert_proto.h
+      INSTALLPY process.py
+     INSTALLHDR IOEventLink.h
+     INSTALLHDR icmp6.h
+     INSTALLHDR IOExtensiblePaniclog.h
+     INSTALLHDR icmp_var.h
+      INSTALLPY userspace.py
+     INSTALLHDR IOInterruptDispatchSource.h
+     INSTALLHDR if_ether.h
+     INSTALLHDR igmp.h
+     INSTALLHDR IOMemoryDescriptor.h
+      INSTALLPY pci.py
+     INSTALLHDR igmp_var.h
+     INSTALLHDR IOMemoryMap.h
+     INSTALLHDR in.h
+      INSTALLPY misc.py
+     INSTALLHDR IOService.h
+     INSTALLHDR in_gif.h
+     INSTALLHDR IOServiceNotificationDispatchSource.h
+     INSTALLHDR in_pcb.h
+      INSTALLPY apic.py
+     INSTALLHDR IOServiceStateNotificationDispatchSource.h
+     INSTALLHDR in_private.h
+     INSTALLHDR IOUserClient.h
+     INSTALLHDR in_stat.h
+      INSTALLPY kasan.py
+     INSTALLHDR IOUserServer.h
+     INSTALLHDR in_systm.h
+     INSTALLHDR IOWorkGroup.h
+     INSTALLHDR in_tclass.h
+      INSTALLPY usertaskgdbserver.py
+     INSTALLHDR OSAction.h
+     INSTALLHDR in_var.h
+     INSTALLHDR OSObject.h
+      INSTALLPY waitq.py
+     INSTALLHDR ip.h
+     INSTALLHDR IOTypes.h
+     INSTALLHDR ip6.h
+     INSTALLHDR IOReturn.h
+      INSTALLPY xnutriage.py
+     INSTALLHDR ip_compat.h
+     INSTALLHDR IORPC.h
+     INSTALLHDR ip_dummynet.h
+     INSTALLHDR IOKitKeys.h
+      INSTALLPY kmtriage.py
+     INSTALLHDR ip_flowid.h
+     INSTALLHDR IOKernelReportStructs.h
+     INSTALLHDR ip_icmp.h
+     INSTALLHDR IOReportTypes.h
+      INSTALLPY zonetriage.py
+     INSTALLHDR ip_var.h
+     INSTALLHDR queue_implementation.h
+     INSTALLHDR mptcp_var.h
+     INSTALLHDR macro_help.h
+      INSTALLPY recount.py
+     INSTALLHDR tcp.h
+     INSTALLHDR bounded_ptr.h
+     INSTALLHDR tcp_cache.h
+     INSTALLHDR bounded_array.h
+      INSTALLPY sysreg.py
+     INSTALLHDR tcp_cc.h
+     INSTALLHDR bounded_array_ref.h
+     INSTALLHDR tcp_fsm.h
+     INSTALLHDR bounded_ptr_fwd.h
+      INSTALLPY counter.py
+     INSTALLHDR tcp_log.h
+     INSTALLHDR OSBoundedArray.h
+     INSTALLHDR tcp_private.h
+     INSTALLHDR OSBoundedArrayRef.h
+      INSTALLPY refgrp.py
+     INSTALLHDR tcp_seq.h
+     INSTALLHDR OSBoundedPtr.h
+     INSTALLHDR tcp_timer.h
+     INSTALLHDR OSBoundedPtrFwd.h
+      INSTALLPY workload.py
+     INSTALLHDR tcp_var.h
+     INSTALLHDR safe_allocation.h
+     INSTALLHDR tcpip.h
+      INSTALLPY log.py
+     INSTALLHDR udp.h
+     INSTALLHDR udp_log.h
+      INSTALLPY kext.py
+     INSTALLHDR udp_var.h
+     INSTALLHDR IODataQueueDispatchSourceShared.h
+     INSTALLHDR bootp.h
+     INSTALLHDR OSUnserializeXMLSharedImplementation.h
+      INSTALLPY nvram.py
+     INSTALLHDR flow_divert_proto.h
+     INSTALLHDR icmp6.h
+      INSTALLPY taskinfo.py
+     INSTALLHDR icmp_var.h
+     INSTALLHDR IOBlockStorageDevice.h
+     INSTALLHDR if_ether.h
+      INSTALLPY exclaves.py
+     INSTALLHDR IOBufferMemoryDescriptor.h
+     INSTALLHDR igmp.h
+     INSTALLHDR IODataQueueDispatchSource.h
+      INSTALLPY vm_pageout.py
+     INSTALLHDR igmp_var.h
+     INSTALLHDR IODispatchQueue.h
+     INSTALLHDR in.h
+      INSTALLPY tests/integration_smoke/__init__.py
+     INSTALLHDR IODispatchSource.h
+     INSTALLHDR in_arp.h
+     INSTALLHDR IOInterruptDispatchSource.h
+     INSTALLHDR in_gif.h
+      INSTALLPY tests/utils/lldb_session.py
+     INSTALLHDR IOMemoryDescriptor.h
+     INSTALLHDR in_pcb.h
+     INSTALLHDR in_private.h
+     INSTALLHDR IOMemoryMap.h
+      INSTALLPY tests/integration_smoke/conftest.py
+     INSTALLHDR in_stat.h
+     INSTALLHDR IOService.h
+     INSTALLHDR in_systm.h
+     INSTALLHDR IOTimerDispatchSource.h
+      INSTALLPY tests/integration_smoke/test_lldb_macros.py
+     INSTALLHDR in_tclass.h
+     INSTALLHDR IOUserServer.h
+     INSTALLHDR in_var.h
+      INSTALLPY kernel.py
+     INSTALLHDR OSAction.h
+     INSTALLHDR inp_log.h
+     INSTALLHDR OSArray.h
+     INSTALLHDR ip.h
+     INSTALLHDR OSBoolean.h
+     INSTALLHDR ip6.h
+     INSTALLHDR OSCollection.h
+     INSTALLHDR ip_compat.h
+     INSTALLHDR OSContainer.h
+     INSTALLHDR ip_dummynet.h
+     INSTALLHDR OSData.h
+     INSTALLHDR ip_ecn.h
+     INSTALLHDR OSDictionary.h
+     INSTALLHDR ip_encap.h
+     INSTALLHDR OSNumber.h
+     INSTALLHDR ip_flowid.h
+     INSTALLHDR OSObject.h
+     INSTALLHDR ip_icmp.h
+     INSTALLHDR OSSerialization.h
+     INSTALLHDR ip_var.h
+     INSTALLHDR OSString.h
+     INSTALLHDR kpi_ipfilter.h
+     INSTALLHDR mptcp_var.h
+     INSTALLHDR tcp.h
+     INSTALLHDR Exclaves.h
+     INSTALLHDR tcp_cache.h
+     INSTALLHDR Exclaves.h
+     INSTALLHDR tcp_cc.h
+     INSTALLHDR tcp_fsm.h
+     INSTALLHDR tcp_includes.h
+     INSTALLHDR tcp_log.h
+     INSTALLHDR tcp_private.h
+     INSTALLHDR ah.h
+     INSTALLHDR tcp_seq.h
+     INSTALLHDR ipsec.h
+     INSTALLHDR tcp_sysctls.h
+     INSTALLHDR tcp_timer.h
+     INSTALLHDR esp.h
+     INSTALLHDR tcp_utils.h
+     INSTALLHDR in6.h
+     INSTALLHDR tcp_var.h
+     INSTALLHDR tcpip.h
+     INSTALLHDR ipcomp.h
+     INSTALLHDR udp.h
+     INSTALLHDR raw_ip6.h
+     INSTALLHDR udp_log.h
+     INSTALLHDR scope6_var.h
+     INSTALLHDR udp_var.h
+     INSTALLHDR in6_var.h
+     INSTALLHDR nd6.h
+     INSTALLHDR netinet6.modulemap
+     INSTALLHDR keysock.h
+     INSTALLHDR ah.h
+     INSTALLHDR keysock.h
+     INSTALLHDR ipsec.h
+     INSTALLHDR key_debug.h
+     INSTALLHDR esp.h
+     INSTALLHDR key_var.h
+     INSTALLHDR in6.h
+     INSTALLHDR keydb.h
+     INSTALLHDR ipcomp.h
+     INSTALLHDR keysock.h
+     INSTALLHDR raw_ip6.h
+     INSTALLHDR keysock_private.h
+     INSTALLHDR scope6_var.h
+     INSTALLHDR keysock.h
+     INSTALLHDR in6_var.h
+     INSTALLHDR key_debug.h
+     INSTALLHDR nd6.h
+     INSTALLHDR keydb.h
+     INSTALLHDR in6_private.h
+     INSTALLHDR in6_private.h
+     INSTALLHDR key_var.h
+     INSTALLHDR ah.h
+     INSTALLHDR keysock_private.h
+     INSTALLHDR esp.h
+     INSTALLHDR key.h
+     INSTALLHDR in6.h
+     INSTALLHDR in6_pcb.h
+     INSTALLHDR in6_private.h
+     INSTALLHDR in6_var.h
+     INSTALLHDR nfs.h
+     INSTALLHDR ip6_var.h
+     INSTALLHDR nfsproto.h
+        INSTALL libkernel.a
+     INSTALLHDR rpcv2.h
+     INSTALLHDR ipcomp.h
+     INSTALLHDR xdr_subs.h
+     INSTALLHDR ipsec.h
+     INSTALLHDR krpc.h
+     INSTALLHDR mld6_var.h
+     INSTALLHDR nfs.h
+     INSTALLHDR nd6.h
+     INSTALLHDR nfsproto.h
+     INSTALLHDR asm.h
+     INSTALLHDR raw_ip6.h
+     INSTALLHDR rpcv2.h
+     INSTALLHDR boolean.h
+     INSTALLHDR scope6_var.h
+     INSTALLHDR xdr_subs.h
+     INSTALLHDR exception.h
+     INSTALLHDR ah.h
+     INSTALLHDR nfs.h
+     INSTALLHDR ah6.h
+     INSTALLHDR kern_return.h
+     INSTALLHDR nfsproto.h
+     INSTALLHDR esp.h
+     INSTALLHDR ndr_def.h
+     INSTALLHDR rpcv2.h
+     INSTALLHDR esp6.h
+     INSTALLHDR rpc.h
+     INSTALLHDR xdr_subs.h
+     INSTALLHDR esp_chachapoly.h
+     INSTALLHDR processor_info.h
+     INSTALLHDR krpc.h
+     INSTALLHDR esp_rijndael.h
+     INSTALLHDR thread_state.h
+     INSTALLHDR nfs.h
+     INSTALLHDR in6.h
+     INSTALLHDR thread_status.h
+     INSTALLHDR nfsproto.h
+     INSTALLHDR in6_gif.h
+     INSTALLHDR vm_param.h
+     INSTALLHDR rpcv2.h
+     INSTALLHDR in6_ifattach.h
+     INSTALLHDR vm_types.h
+     INSTALLHDR xdr_subs.h
+     INSTALLHDR machine_types.defs
+     INSTALLHDR in6_pcb.h
+     INSTALLHDR syscall_sw.h
+done building xnu
+     INSTALLHDR sdt.h
+     INSTALLHDR in6_private.h
+     INSTALLHDR in6_var.h
+     INSTALLHDR sdt_isa.h
+     INSTALLHDR ip6_ecn.h
+     INSTALLHDR _structs.h
+     INSTALLHDR audit_ioctl.h
+     INSTALLHDR asm.h
+     INSTALLHDR ip6_var.h
+     INSTALLHDR audit_ioctl.h
+     INSTALLHDR boolean.h
+     INSTALLHDR audit_ioctl.h
+     INSTALLHDR ip6protosw.h
+     INSTALLHDR exception.h
+     INSTALLHDR audit_ioctl.h
+     INSTALLHDR kern_return.h
+     INSTALLHDR ipcomp.h
+     INSTALLHDR audit.h
+     INSTALLHDR ipsec.h
+     INSTALLHDR ndr_def.h
+     INSTALLHDR audit_bsd.h
+     INSTALLHDR ipsec6.h
+     INSTALLHDR rpc.h
+     INSTALLHDR audit_private.h
+     INSTALLHDR mld6_var.h
+     INSTALLHDR processor_info.h
+     INSTALLHDR nd6.h
+     INSTALLHDR raw_ip6.h
+     INSTALLHDR thread_state.h
+     INSTALLHDR thread_status.h
+     INSTALLHDR scope6_var.h
+     INSTALLHDR vm_param.h
+     INSTALLHDR tcp6_var.h
+     INSTALLHDR skywalk_common.h
+     INSTALLHDR vm_types.h
+     INSTALLHDR udp6_var.h
+     INSTALLHDR machine_types.defs
+     INSTALLHDR skywalk_common.h
+     INSTALLHDR syscall_sw.h
+     INSTALLHDR sdt.h
+     INSTALLHDR sdt_isa.h
+     INSTALLHDR _structs.h
+     INSTALLHDR boot.h
+     INSTALLHDR _structs.h
+     INSTALLHDR os_channel.h
+     INSTALLHDR protos.h
+     INSTALLHDR asm.h
+     INSTALLHDR os_channel_event.h
+     INSTALLHDR boolean.h
+     INSTALLHDR boot.h
+     INSTALLHDR os_channel_private.h
+     INSTALLHDR exception.h
+     INSTALLHDR protos.h
+     INSTALLHDR os_channel.h
+     INSTALLHDR kern_return.h
+     INSTALLHDR boot.h
+     INSTALLHDR os_channel_event.h
+     INSTALLHDR machine_types.defs
+     INSTALLHDR protos.h
+     INSTALLHDR os_channel_private.h
+     INSTALLHDR ndr_def.h
+     INSTALLHDR boot.h
+     INSTALLHDR os_channel.h
+     INSTALLHDR processor_info.h
+     INSTALLHDR protos.h
+     INSTALLHDR rpc.h
+     INSTALLHDR os_channel_event.h
+     INSTALLHDR sdt.h
+     INSTALLHDR sdt_isa.h
+     INSTALLHDR boot.h
+     INSTALLHDR syscall_sw.h
+     INSTALLHDR protos.h
+     INSTALLHDR thread_state.h
+     INSTALLHDR os_nexus.h
+     INSTALLHDR pexpert.h
+     INSTALLHDR thread_status.h
+     INSTALLHDR os_nexus_private.h
+     INSTALLHDR boot.h
+     INSTALLHDR nexus_common.h
+     INSTALLHDR vm_param.h
+     INSTALLHDR protos.h
+     INSTALLHDR vm_types.h
+     INSTALLHDR nexus_ioctl.h
+     INSTALLHDR pexpert.h
+     INSTALLHDR asm.h
+     INSTALLHDR os_nexus.h
+     INSTALLHDR device_tree.h
+     INSTALLHDR boolean.h
+     INSTALLHDR os_nexus_private.h
+     INSTALLHDR exception.h
+     INSTALLHDR boot.h
+     INSTALLHDR kern_return.h
+     INSTALLHDR nexus_ioctl.h
+     INSTALLHDR pexpert.h
+     INSTALLHDR ndr_def.h
+     INSTALLHDR os_nexus.h
+     INSTALLHDR protos.h
+     INSTALLHDR rpc.h
+     INSTALLHDR boot.h
+     INSTALLHDR processor_info.h
+     INSTALLHDR protos.h
+     INSTALLHDR thread_state.h
+     INSTALLHDR os_packet.h
+     INSTALLHDR pexpert.h
+     INSTALLHDR thread_status.h
+     INSTALLHDR device_tree.h
+     INSTALLHDR os_packet_private.h
+     INSTALLHDR vm_param.h
+     INSTALLHDR vm_types.h
+     INSTALLHDR os_packet.h
+     INSTALLHDR machine_types.defs
+     INSTALLHDR os_packet_private.h
+     INSTALLHDR syscall_sw.h
+     INSTALLHDR bsdthread_private.h
+     INSTALLHDR packet_common.h
+     INSTALLHDR sdt.h
+     INSTALLHDR priority_private.h
+     INSTALLHDR os_packet.h
+     INSTALLHDR sdt_isa.h
+     INSTALLHDR workqueue_syscalls.h
+     INSTALLHDR _structs.h
+     INSTALLHDR bsdthread_private.h
+     INSTALLHDR priority_private.h
+     INSTALLHDR workqueue_syscalls.h
+     INSTALLHDR bsdthread_private.h
+     INSTALLHDR os_skywalk.h
+     INSTALLHDR bootstrap.h
+     INSTALLHDR priority_private.h
+     INSTALLHDR os_skywalk_private.h
+     INSTALLHDR audit_triggers.defs
+     INSTALLHDR workqueue_syscalls.h
+     INSTALLHDR os_stats_private.h
+     INSTALLHDR audit_triggers_types.h
+     INSTALLHDR boolean.h
+     INSTALLHDR os_sysctls_private.h
+     INSTALLHDR clock.defs
+     INSTALLHDR module.modulemap
+     INSTALLHDR clock_priv.defs
+     INSTALLHDR os_skywalk.h
+     INSTALLHDR clock_reply.defs
+     INSTALLHDR os_skywalk_private.h
+     INSTALLHDR _blkcnt_t.h
+     INSTALLHDR clock_types.defs
+     INSTALLHDR os_stats_private.h
+     INSTALLHDR _blksize_t.h
+     INSTALLHDR clock_types.h
+     INSTALLHDR os_sysctls_private.h
+     INSTALLHDR _caddr_t.h
+     INSTALLHDR doubleagent_mig.defs
+     INSTALLHDR os_skywalk.h
+     INSTALLHDR _clock_t.h
+     INSTALLHDR doubleagent_types.h
+     INSTALLHDR _ct_rune_t.h
+     INSTALLHDR dyld_kernel.h
+     INSTALLHDR _dev_t.h
+     INSTALLHDR dyld_pager.h
+     INSTALLHDR _errno_t.h
+     INSTALLHDR error.h
+     INSTALLHDR _fd_clr.h
+     INSTALLHDR uuid.h
+     INSTALLHDR exc.defs
+     INSTALLHDR _fd_copy.h
+     INSTALLHDR uuid.modulemap
+     INSTALLHDR exception.h
+     INSTALLHDR _fd_def.h
+     INSTALLHDR uuid.h
+     INSTALLHDR exception_types.h
+     INSTALLHDR _fd_isset.h
+     INSTALLHDR uuid.h
+     INSTALLHDR _fd_set.h
+     INSTALLHDR host_info.h
+     INSTALLHDR uuid.h
+     INSTALLHDR _fd_setsize.h
+     INSTALLHDR host_notify.h
+     INSTALLHDR _fd_zero.h
+     INSTALLHDR host_notify_reply.defs
+     INSTALLHDR _filesec_t.h
+     INSTALLHDR vfs_support.h
+     INSTALLHDR host_priv.defs
+     INSTALLHDR _fsblkcnt_t.h
+     INSTALLHDR vfs_support.h
+     INSTALLHDR host_reboot.h
+     INSTALLHDR _fsfilcnt_t.h
+     INSTALLHDR host_security.defs
+     INSTALLHDR vfs_support.h
+     INSTALLHDR host_special_ports.h
+     INSTALLHDR _fsid_t.h
+     INSTALLHDR vfs_support.h
+     INSTALLHDR kern_return.h
+     INSTALLHDR _fsobj_id_t.h
+     INSTALLHDR vfs_disk_conditioner.h
+     INSTALLHDR _gid_t.h
+     INSTALLHDR kmod.h
+     INSTALLHDR vfs_exclave_fs.h
+     INSTALLHDR mach_exc.defs
+     INSTALLHDR _graftdmg_un.h
+     INSTALLHDR mach_host.defs
+     INSTALLHDR _guid_t.h
+     INSTALLHDR mach_param.h
+     INSTALLHDR mach_port.defs
+     INSTALLHDR _id_t.h
+     INSTALLHDR mach_syscalls.h
+     INSTALLHDR OSByteOrder.h
+     INSTALLHDR _in_addr_t.h
+     INSTALLHDR mach_time.h
+     INSTALLHDR OSByteOrder.h
+     INSTALLHDR _in_port_t.h
+     INSTALLHDR mach_traps.h
+     INSTALLHDR mach_types.defs
+     INSTALLHDR OSByteOrder.h
+     INSTALLHDR _ino64_t.h
+     INSTALLHDR mach_types.h
